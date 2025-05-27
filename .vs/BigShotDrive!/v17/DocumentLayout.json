@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\simplemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\joystick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,7 @@
               "RelativeToolTip": "Assets\\Scripts\\JoyStick.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T23:54:47.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T23:54:47.333Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\simpleMove.cs",
               "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\simpleMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\simpleMove.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAADwvywAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T10:52:08.659Z",
               "EditorCaption": ""

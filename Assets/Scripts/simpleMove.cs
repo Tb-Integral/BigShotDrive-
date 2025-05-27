@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class simpleMove : MonoBehaviour
 {
     [SerializeField] private Rigidbody CircleRb, BikeRb;
     [SerializeField] private InputActionReference Joystick;
+    [SerializeField] private Slider slider;
     public float maxSpeed, acceleration, rotateStrength;
 
     private float moveInput, rotateInput;
@@ -20,10 +22,19 @@ public class simpleMove : MonoBehaviour
 
     private void Update()
     {
-        Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
+        if (slider.value == 0)
+        {
+            Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
+            moveInput = joystickInput.y;    // Вперёд / назад
+            rotateInput = joystickInput.x;  // Влево / вправо
+        }
+        else if (slider.value == 1)
+        {
+            moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
+            rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
+        }
         transform.position = CircleRb.transform.position;
-        moveInput = joystickInput.y;    // Вперёд / назад
-        rotateInput = joystickInput.x;  // Влево / вправо
+
         BikeRb.MoveRotation(transform.rotation);
     }
 
@@ -32,7 +43,7 @@ public class simpleMove : MonoBehaviour
     {
         Movement();
         Rotation();
-    }   
+    }
 
     private void Movement()
     {
@@ -41,6 +52,6 @@ public class simpleMove : MonoBehaviour
 
     private void Rotation()
     {
-        transform.Rotate(0, rotateInput * moveInput * rotateStrength * Time.fixedDeltaTime, 0, Space.World);
+        transform.Rotate(0, rotateInput * rotateStrength * Time.fixedDeltaTime, 0, Space.World);
     }
 }
