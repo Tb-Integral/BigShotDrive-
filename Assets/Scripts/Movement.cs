@@ -1,29 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.UI;
 
-public class simpleMove : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     [SerializeField] private Rigidbody CircleRb, BikeRb;
     [SerializeField] private InputActionReference Joystick;
     [SerializeField] private Slider slider;
     [SerializeField] private Button stopButton;
+    [HideInInspector] public Vector3 velocity;
 
-    public float maxSpeed, acceleration, rotateStrength, rayLength, gravity;
+    public float maxSpeed, acceleration, rotateStrength, gravity, bikeTiltInc, zTiltAngle = 45f;
     [Range(1, 10)]
-    public float breakingFactor;
+    public float brakingFactor;
     public LayerMask derivableSurface;
 
-    private float moveInput, rotateInput;
-    private bool IsGrounded;
     private bool stopRequested = false;
-    RaycastHit hit;
+    private float moveInput, rotateInput, currentVelocityOffset;
+    private float currentZTilt = 0f;
 
+    float rayLength;
+    RaycastHit hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +47,11 @@ public class simpleMove : MonoBehaviour
             eventTrigger.triggers.Add(pointerUp);
         }
 
-        float scaledRadius = CircleRb.GetComponent<SphereCollider>().radius * CircleRb.transform.lossyScale.y;
-        rayLength = scaledRadius + 0.2f;
+        rayLength = CircleRb.transform.GetComponent<SphereCollider>().radius * CircleRb.transform.localScale.y + 0.3f;
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (slider.value == 0)
         {
@@ -66,56 +66,77 @@ public class simpleMove : MonoBehaviour
         }
         transform.position = CircleRb.transform.position;
 
-        BikeRb.MoveRotation(transform.rotation);
+        velocity = BikeRb.transform.InverseTransformDirection(BikeRb.velocity);
+        currentVelocityOffset = velocity.z / maxSpeed;
     }
 
-    // Update is called once per frame
     private void FixedUpdate()
     {
-        Movement();
+        Movement_();
     }
 
-    private void Movement()
+    void Movement_()
     {
         if (Grounded())
         {
-            if (Input.GetKey(KeyCode.Space) || stopRequested)
+            if (!Input.GetKey(KeyCode.Space) || !stopRequested)
             {
-                Stop(); // если торможение Ч только тормозим
-            }
-            else
-            {
-                Acceleration(); // иначе Ч едем
+
+                Acceleration();
             }
             Rotation();
+            Brake();
         }
         else
         {
             Gravity();
         }
+        BikeTilt();
+    }
+
+    void Rotation()
+    {
+        transform.Rotate(0, rotateInput * currentVelocityOffset * rotateStrength * Time.fixedDeltaTime, 0, Space.World);
     }
 
     private void Acceleration()
     {
         CircleRb.velocity = Vector3.Lerp(CircleRb.velocity, maxSpeed * moveInput * transform.forward, Time.fixedDeltaTime * acceleration);
     }
-
-    private void Rotation()
+    void BikeTilt()
     {
-        transform.Rotate(0, rotateInput * rotateStrength * Time.fixedDeltaTime, 0, Space.World);
+        // 1. Ќаклон по X (вперЄд/назад) по поверхности
+        float xRot = (Quaternion.FromToRotation(BikeRb.transform.up, hit.normal) * BikeRb.transform.rotation).eulerAngles.x;
+
+        // 2. ÷елевой наклон по Z (вбок) Ч не задаЄм напр€мую!
+        float targetZTilt = 0f;
+        if (currentVelocityOffset > 0)
+        {
+            targetZTilt = -zTiltAngle * rotateInput * currentVelocityOffset;
+        }
+
+        // 3. ѕлавно интерполируем Z-наклон
+        currentZTilt = Mathf.Lerp(currentZTilt, targetZTilt, Time.fixedDeltaTime * 5f); // 5 Ч скорость сглаживани€
+
+        // 4. —обираем итоговый поворот
+        Quaternion targetRot = Quaternion.Euler(xRot, transform.eulerAngles.y, currentZTilt);
+
+        // 5. ѕлавно вращаем RigidBody
+        BikeRb.MoveRotation(Quaternion.Slerp(BikeRb.rotation, targetRot, bikeTiltInc));
     }
 
-    public void Stop()
+    void Brake()
     {
         if (Input.GetKey(KeyCode.Space) || stopRequested)
         {
-            CircleRb.velocity *= breakingFactor / 10;
+            CircleRb.velocity *= brakingFactor / 10;
         }
     }
 
     bool Grounded()
     {
-        if (Physics.Raycast(CircleRb.position, Vector3.down, out hit, rayLength, derivableSurface))
+        Ray ray = new Ray(CircleRb.position, Vector3.down);
+        if (Physics.Raycast(ray, out hit, rayLength, derivableSurface))
         {
             return true;
         }
@@ -125,7 +146,7 @@ public class simpleMove : MonoBehaviour
         }
     }
 
-    private void Gravity()
+    void Gravity()
     {
         CircleRb.AddForce(gravity * Vector3.down, ForceMode.Acceleration);
     }
