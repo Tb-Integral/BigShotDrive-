@@ -1057,11 +1057,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a524d15ed3051e74885f282a1b10845c, type: 3}
---- !u!54 &393364912 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8323348951907846351, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-  m_PrefabInstance: {fileID: 7796363142633413439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &438014201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8573796383619095031, guid: 13a000b01d20a404f8c27c649462ff14, type: 3}
@@ -3547,11 +3542,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f14800a72eef93b4b8f9e5abc3844f0d, type: 3}
---- !u!54 &1056065195 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 6490718640333304911, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-  m_PrefabInstance: {fileID: 7796363142633413439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1059827103
 GameObject:
   m_ObjectHideFlags: 0
@@ -4659,39 +4649,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f14800a72eef93b4b8f9e5abc3844f0d, type: 3}
---- !u!1 &1316852898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8329680421465400132, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-  m_PrefabInstance: {fileID: 7796363142633413439}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1316852899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316852898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2af1741f4aba417459f6b260e1e79f34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CircleRb: {fileID: 1056065195}
-  BikeRb: {fileID: 393364912}
-  Joystick: {fileID: -2281925529317989991, guid: 210b93ff4ff063a458df721b794ac3fa, type: 3}
-  slider: {fileID: 1059827105}
-  stopButton: {fileID: 1787080820}
-  velocity: {x: 0, y: 0, z: 0}
-  maxSpeed: 70
-  acceleration: 10
-  rotateStrength: 70
-  gravity: 30
-  bikeTiltInc: 0.52
-  zTiltAngle: 20.3
-  brakingFactor: 9.42
-  derivableSurface:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &1323041897
 GameObject:
   m_ObjectHideFlags: 0
@@ -8340,10 +8297,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6490718640333304911, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
       propertyPath: slider
       value: 
@@ -8364,22 +8317,14 @@ PrefabInstance:
       propertyPath: derivableSurface.m_Bits
       value: 256
       objectReference: {fileID: 0}
-    - target: {fileID: 8323348951907846351, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
     - target: {fileID: 8329680421465400132, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
       propertyPath: m_Name
       value: rootBike
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8329680421465400132, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1316852899}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
