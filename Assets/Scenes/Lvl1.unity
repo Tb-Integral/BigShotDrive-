@@ -6786,10 +6786,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6490718640333304911, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
       propertyPath: slider
       value: 
       objectReference: {fileID: 1059827105}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: gravity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: stopButton
+      value: 
+      objectReference: {fileID: 1787080820}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: zTiltAngle
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: bikeTiltInc
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: brakingFactor
+      value: 9.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: breakingFactor
+      value: 9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225508359666966470, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: derivableSurface.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323348951907846351, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 8329680421465400132, guid: 26769f978a472b9468fb56f74fc6d644, type: 3}
       propertyPath: m_Name
       value: rootBike
