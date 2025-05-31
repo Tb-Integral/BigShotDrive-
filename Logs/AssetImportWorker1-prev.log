@@ -15,15 +15,21 @@ E:/Mareatan/GitHub/BigShotDrive!
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 49199
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< Updated upstream
 55208
 =======
 59953
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 Successfully changed project path to: E:/Mareatan/GitHub/BigShotDrive!
 E:/Mareatan/GitHub/BigShotDrive!
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -57,6 +63,7 @@ E:/Mareatan/GitHub/BigShotDrive!
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Player connection [7504] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 2685385083 [EditorId] 2685385083 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
@@ -71,6 +78,14 @@ Player connection [7868] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 3759
 Player connection [7868] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 375929058 [EditorId] 375929058 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+=======
+<<<<<<< Updated upstream
+Player connection [7868] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 375929058 [EditorId] 375929058 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7868] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 375929058 [EditorId] 375929058 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 7.47 ms, found 3 plugins.
 =======
 Player connection [5516] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 4093587068 [EditorId] 4093587068 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
@@ -80,7 +95,10 @@ Player connection [5516] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 4093
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Refreshing native plugins compatible for Editor in 10.73 ms, found 4 plugins.
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.25f1 (530ae0ba3889)
 [Subsystems] Discovering subsystems at path E:/Program Files/2022.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -96,19 +114,26 @@ Initialize mono
 Mono path[0] = 'E:/Program Files/2022.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files/2022.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Program Files/2022.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
 =======
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files/2022.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Program Files/2022.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Registered in 0.004705 seconds.
 - Loaded All Assemblies, in  0.392 seconds
@@ -127,6 +152,15 @@ Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Android Extension - Scanning For ADB Devices 271 ms
 Mono: successfully reloaded assembly
+=======
+<<<<<<< Updated upstream
+Registered in 0.004606 seconds.
+- Loaded All Assemblies, in  0.440 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 271 ms
+Mono: successfully reloaded assembly
+>>>>>>> Stashed changes
 - Finished resetting the current domain, in  0.696 seconds
 Domain Reload Profiling: 1136ms
 	BeginReloadAssembly (152ms)
@@ -141,12 +175,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling: 1349ms
 	BeginReloadAssembly (146ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (11ms)
@@ -219,6 +257,55 @@ Domain Reload Profiling: 1349ms
 			ProcessInitializeOnLoadMethodAttributes (61ms)
 >>>>>>> Stashed changes
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+<<<<<<< Updated upstream
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (152ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (151ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (696ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (623ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (395ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+=======
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (280ms)
+		LoadAssemblies (146ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (277ms)
+			TypeCache.Refresh (275ms)
+				TypeCache.ScanAssembly (259ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (769ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (699ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (445ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -226,6 +313,7 @@ Domain Reload Profiling: 1349ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - Loaded All Assemblies, in  0.922 seconds
 Refreshing native plugins compatible for Editor in 5.08 ms, found 4 plugins.
@@ -242,6 +330,14 @@ Refreshing native plugins compatible for Editor in 3.89 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
+=======
+<<<<<<< Updated upstream
+- Loaded All Assemblies, in  0.826 seconds
+Refreshing native plugins compatible for Editor in 3.89 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+>>>>>>> Stashed changes
 - Finished resetting the current domain, in  1.066 seconds
 Domain Reload Profiling: 1894ms
 	BeginReloadAssembly (237ms)
@@ -318,11 +414,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling: 1974ms
 	BeginReloadAssembly (205ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 		CreateAndSetChildDomain (24ms)
 	RebuildCommonClasses (36ms)
@@ -331,6 +431,8 @@ Domain Reload Profiling: 1974ms
 	LoadAllAssembliesAndSetupDomain (650ms)
 		LoadAssemblies (440ms)
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< Updated upstream
 		CreateAndSetChildDomain (41ms)
 	RebuildCommonClasses (41ms)
@@ -559,6 +661,7 @@ Domain Reload Profiling: 2184ms
 	initialDomainReloadingComplete (32ms)
 	LoadAllAssembliesAndSetupDomain (323ms)
 		LoadAssemblies (363ms)
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (324ms)
@@ -723,6 +826,13 @@ Unloading 54 unused Assets / (507.0 KB). Loaded Objects now: 7064.
 Memory consumption went from 236.2 MB to 235.7 MB.
 Total: 5.451400 ms (FindLiveObjects: 0.658300 ms CreateObjectMapping: 0.561700 ms MarkObjects: 3.968400 ms  DeleteObjects: 0.261500 ms)
 =======
+=======
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (59ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+>>>>>>> Stashed changes
 			ResolveRequiredComponents (13ms)
 	FinalizeReload (1596ms)
 		ReleaseScriptCaches (0ms)
@@ -745,7 +855,10 @@ Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 54 unused Assets / (506.2 KB). Loaded Objects now: 7047.
 Memory consumption went from 234.4 MB to 233.9 MB.
 Total: 5.151000 ms (FindLiveObjects: 0.660700 ms CreateObjectMapping: 0.671200 ms MarkObjects: 3.567200 ms  DeleteObjects: 0.250100 ms)
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -764,6 +877,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - Loaded All Assemblies, in  0.676 seconds
 Refreshing native plugins compatible for Editor in 4.32 ms, found 4 plugins.
@@ -811,6 +925,8 @@ Unloading 54 unused Assets / (490.7 KB). Loaded Objects now: 7081.
 Memory consumption went from 238.2 MB to 237.7 MB.
 Total: 5.538600 ms (FindLiveObjects: 0.936200 ms CreateObjectMapping: 0.569800 ms MarkObjects: 3.559700 ms  DeleteObjects: 0.471300 ms)
 =======
+=======
+>>>>>>> Stashed changes
 - Loaded All Assemblies, in  0.619 seconds
 Refreshing native plugins compatible for Editor in 6.08 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
@@ -1696,7 +1812,10 @@ Unloading 5911 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 94 unused Assets / (4.1 MB). Loaded Objects now: 6665.
 Memory consumption went from 245.2 MB to 241.1 MB.
 Total: 8.918100 ms (FindLiveObjects: 0.723500 ms CreateObjectMapping: 0.413300 ms MarkObjects: 4.739500 ms  DeleteObjects: 3.039700 ms)
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1756,6 +1875,7 @@ Domain Reload Profiling: 2217ms
 			BeforeProcessingInitializeOnLoad (84ms)
 			ProcessInitializeOnLoadAttributes (502ms)
 			ProcessInitializeOnLoadMethodAttributes (87ms)
+<<<<<<< Updated upstream
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -1768,6 +1888,18 @@ Memory consumption went from 247.0 MB to 243.0 MB.
 Total: 8.038700 ms (FindLiveObjects: 0.728800 ms CreateObjectMapping: 0.611300 ms MarkObjects: 3.989400 ms  DeleteObjects: 2.707400 ms)
 =======
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (4.0 MB). Loaded Objects now: 6681.
+Memory consumption went from 247.0 MB to 243.0 MB.
+Total: 8.038700 ms (FindLiveObjects: 0.728800 ms CreateObjectMapping: 0.611300 ms MarkObjects: 3.989400 ms  DeleteObjects: 2.707400 ms)
+=======
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1777,6 +1909,76 @@ Total: 8.038700 ms (FindLiveObjects: 0.728800 ms CreateObjectMapping: 0.611300 m
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.714 seconds
+Refreshing native plugins compatible for Editor in 7.53 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.433 seconds
+Domain Reload Profiling: 3146ms
+	BeginReloadAssembly (243ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (474ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2433ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (768ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (534ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 7.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (506.3 KB). Loaded Objects now: 7183.
+Memory consumption went from 249.9 MB to 249.4 MB.
+Total: 6.179800 ms (FindLiveObjects: 0.862800 ms CreateObjectMapping: 0.744100 ms MarkObjects: 4.231300 ms  DeleteObjects: 0.339300 ms)
+>>>>>>> Stashed changes
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+>>>>>>> Stashed changes
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - Loaded All Assemblies, in  0.571 seconds
 Refreshing native plugins compatible for Editor in 6.02 ms, found 4 plugins.
@@ -1894,6 +2096,14 @@ Refreshing native plugins compatible for Editor in 3.51 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
+=======
+<<<<<<< Updated upstream
+- Loaded All Assemblies, in  0.863 seconds
+Refreshing native plugins compatible for Editor in 3.51 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+>>>>>>> Stashed changes
 - Finished resetting the current domain, in 15.771 seconds
 Domain Reload Profiling: 16634ms
 	BeginReloadAssembly (185ms)
@@ -1981,6 +2191,7 @@ Unloading 54 unused Assets / (507.4 KB). Loaded Objects now: 7200.
 Memory consumption went from 251.8 MB to 251.3 MB.
 Total: 5.157700 ms (FindLiveObjects: 0.765200 ms CreateObjectMapping: 0.666700 ms MarkObjects: 3.427000 ms  DeleteObjects: 0.296900 ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
 
 Prepare: number of updated asset objects reloaded= 0
@@ -2078,6 +2289,8 @@ Unloading 5910 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 95 unused Assets / (4.0 MB). Loaded Objects now: 6712.
 Memory consumption went from 250.9 MB to 246.9 MB.
 Total: 6.651000 ms (FindLiveObjects: 0.686900 ms CreateObjectMapping: 0.501000 ms MarkObjects: 3.323300 ms  DeleteObjects: 2.138200 ms)
+=======
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -2096,6 +2309,72 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
+=======
+- Loaded All Assemblies, in  0.691 seconds
+Refreshing native plugins compatible for Editor in 3.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.535 seconds
+Domain Reload Profiling: 2226ms
+	BeginReloadAssembly (230ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (379ms)
+		LoadAssemblies (419ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (77ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (40ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1535ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (569ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (390ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 3.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5910 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 95 unused Assets / (4.0 MB). Loaded Objects now: 6712.
+Memory consumption went from 250.9 MB to 246.9 MB.
+Total: 6.651000 ms (FindLiveObjects: 0.686900 ms CreateObjectMapping: 0.501000 ms MarkObjects: 3.323300 ms  DeleteObjects: 2.138200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+>>>>>>> Stashed changes
 - Loaded All Assemblies, in  0.543 seconds
 Refreshing native plugins compatible for Editor in 2.64 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
@@ -2177,13 +2456,17 @@ Domain Reload Profiling: 2113ms
 	initialDomainReloadingComplete (31ms)
 	LoadAllAssembliesAndSetupDomain (290ms)
 		LoadAssemblies (380ms)
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (23ms)
 			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (14ms)
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 	FinalizeReload (1678ms)
 		ReleaseScriptCaches (0ms)
@@ -2207,6 +2490,8 @@ Unloading 54 unused Assets / (490.8 KB). Loaded Objects now: 7115.
 Memory consumption went from 242.0 MB to 241.6 MB.
 Total: 5.100600 ms (FindLiveObjects: 0.589300 ms CreateObjectMapping: 0.620500 ms MarkObjects: 3.623100 ms  DeleteObjects: 0.266400 ms)
 =======
+=======
+>>>>>>> Stashed changes
 	FinalizeReload (1538ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
@@ -5150,7 +5435,10 @@ Unloading 54 unused Assets / (498.6 KB). Loaded Objects now: 7404.
 Memory consumption went from 275.0 MB to 274.5 MB.
 Total: 5.116100 ms (FindLiveObjects: 0.675800 ms CreateObjectMapping: 0.619200 ms MarkObjects: 3.343000 ms  DeleteObjects: 0.476400 ms)
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> dc31a02ec99407ff8937425cee6f1117132a773d
+=======
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
