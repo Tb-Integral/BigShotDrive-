@@ -15,7 +15,7 @@ E:/Mareatan/GitHub/BigShotDrive!
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59665
+60553
 Successfully changed project path to: E:/Mareatan/GitHub/BigShotDrive!
 E:/Mareatan/GitHub/BigShotDrive!
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Mareatan/GitHub/BigShotDrive!
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17944] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 469498463 [EditorId] 469498463 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30476] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 1037747895 [EditorId] 1037747895 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17944] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 469498463 [EditorId] 469498463 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30476] Host "[IP] 192.168.0.106 [Port] 0 [Flags] 2 [Guid] 1037747895 [EditorId] 1037747895 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FG6UTK2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 12.53 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 11.60 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.25f1 (530ae0ba3889)
 [Subsystems] Discovering subsystems at path E:/Program Files/2022.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'E:/Program Files/2022.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Program Files/2022.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Program Files/2022.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Program Files/2022.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Program Files/2022.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005097 seconds.
-- Loaded All Assemblies, in  0.424 seconds
+Registered in 0.005302 seconds.
+- Loaded All Assemblies, in  0.416 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 335 ms
+Android Extension - Scanning For ADB Devices 278 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.697 seconds
-Domain Reload Profiling: 1121ms
-	BeginReloadAssembly (144ms)
+- Finished resetting the current domain, in  0.613 seconds
+Domain Reload Profiling: 1029ms
+	BeginReloadAssembly (131ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (41ms)
+	RebuildCommonClasses (51ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (170ms)
-		LoadAssemblies (144ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (169ms)
+		LoadAssemblies (132ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
-			TypeCache.Refresh (166ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (164ms)
 				TypeCache.ScanAssembly (150ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (697ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (614ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (628ms)
+		SetupLoadedEditorAssemblies (553ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (451ms)
+			InitializePlatformSupportModulesInManaged (383ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (122ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,52 +118,52 @@ Domain Reload Profiling: 1121ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.890 seconds
-Refreshing native plugins compatible for Editor in 4.62 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.929 seconds
+Refreshing native plugins compatible for Editor in 4.40 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.905 seconds
-Domain Reload Profiling: 1796ms
-	BeginReloadAssembly (169ms)
+- Finished resetting the current domain, in  0.876 seconds
+Domain Reload Profiling: 1805ms
+	BeginReloadAssembly (197ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (33ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (11ms)
 	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (640ms)
-		LoadAssemblies (432ms)
+	LoadAllAssembliesAndSetupDomain (646ms)
+		LoadAssemblies (457ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (316ms)
-			TypeCache.Refresh (267ms)
-				TypeCache.ScanAssembly (246ms)
-			ScanForSourceGeneratedMonoScriptInfo (35ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (906ms)
+		AnalyzeDomain (301ms)
+			TypeCache.Refresh (257ms)
+				TypeCache.ScanAssembly (236ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (877ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (689ms)
+		SetupLoadedEditorAssemblies (655ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (480ms)
-			ProcessInitializeOnLoadMethodAttributes (83ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (455ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 5.39 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 4.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6542 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 108 unused Assets / (0.5 MB). Loaded Objects now: 7029.
-Memory consumption went from 267.6 MB to 267.1 MB.
-Total: 5.176400 ms (FindLiveObjects: 0.696600 ms CreateObjectMapping: 0.530400 ms MarkObjects: 3.603900 ms  DeleteObjects: 0.344000 ms)
+Unloading 108 unused Assets / (510.1 KB). Loaded Objects now: 7029.
+Memory consumption went from 267.7 MB to 267.2 MB.
+Total: 6.558500 ms (FindLiveObjects: 1.342200 ms CreateObjectMapping: 0.554600 ms MarkObjects: 4.178700 ms  DeleteObjects: 0.480900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,131 +180,60 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1312670.605551 seconds.
-  path: Assets/Prefabs/rootBike.prefab
-  artifactKey: Guid(26769f978a472b9468fb56f74fc6d644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/rootBike.prefab using Guid(26769f978a472b9468fb56f74fc6d644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518f6cc04c2bd09aac2d60145a0e95af') in 1.120646 seconds
+  Time since last request: 1324480.370921 seconds.
+  path: Assets/Art/uploads_files_2286740_BuildBlend.blend
+  artifactKey: Guid(3e12c47788cf34f459c6147396eea309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/uploads_files_2286740_BuildBlend.blend using Guid(3e12c47788cf34f459c6147396eea309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462d7048aa1c99f8fe72a4272b3f3f4e') in 1.003911 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 595
-========================================================================
-Received Import Request.
-  Time since last request: 49.041576 seconds.
-  path: Assets/Prefabs/rootBike (1).prefab
-  artifactKey: Guid(d452186e68c64fd41afc96fb7af3d633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/rootBike (1).prefab using Guid(d452186e68c64fd41afc96fb7af3d633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee73fe618198698c680825886c1fda5') in 0.142657 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 599
+Number of asset objects unloaded after import = 134
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.576 seconds
-Refreshing native plugins compatible for Editor in 4.13 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.577 seconds
+Refreshing native plugins compatible for Editor in 4.65 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.775 seconds
-Domain Reload Profiling: 2350ms
-	BeginReloadAssembly (206ms)
+- Finished resetting the current domain, in  1.699 seconds
+Domain Reload Profiling: 2276ms
+	BeginReloadAssembly (216ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (35ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (36ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (295ms)
-		LoadAssemblies (378ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1776ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (676ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (461ms)
-			ProcessInitializeOnLoadMethodAttributes (86ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 6.13 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (508.3 KB). Loaded Objects now: 7095.
-Memory consumption went from 236.6 MB to 236.1 MB.
-Total: 5.196600 ms (FindLiveObjects: 0.715200 ms CreateObjectMapping: 0.305800 ms MarkObjects: 3.905000 ms  DeleteObjects: 0.269300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.556 seconds
-Refreshing native plugins compatible for Editor in 4.02 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.674 seconds
-Domain Reload Profiling: 2228ms
-	BeginReloadAssembly (198ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (52ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (280ms)
-		LoadAssemblies (361ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (287ms)
+		LoadAssemblies (377ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (22ms)
 			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (1674ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1699ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (683ms)
+		SetupLoadedEditorAssemblies (701ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (94ms)
-			ProcessInitializeOnLoadAttributes (475ms)
-			ProcessInitializeOnLoadMethodAttributes (82ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (477ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 4.90 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 7.26 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (491.3 KB). Loaded Objects now: 7112.
-Memory consumption went from 238.4 MB to 238.0 MB.
-Total: 5.482000 ms (FindLiveObjects: 0.748000 ms CreateObjectMapping: 0.567400 ms MarkObjects: 3.901000 ms  DeleteObjects: 0.264500 ms)
+Unloading 54 unused Assets / (499.0 KB). Loaded Objects now: 7129.
+Memory consumption went from 235.2 MB to 234.8 MB.
+Total: 5.472700 ms (FindLiveObjects: 0.627100 ms CreateObjectMapping: 0.518800 ms MarkObjects: 4.051400 ms  DeleteObjects: 0.273900 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -323,264 +252,713 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.567 seconds
-Refreshing native plugins compatible for Editor in 4.59 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.535 seconds
+Refreshing native plugins compatible for Editor in 4.71 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.685 seconds
-Domain Reload Profiling: 2252ms
-	BeginReloadAssembly (193ms)
+- Finished resetting the current domain, in  1.735 seconds
+Domain Reload Profiling: 2270ms
+	BeginReloadAssembly (185ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (298ms)
-		LoadAssemblies (374ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (278ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1736ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (705ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (498ms)
+			ProcessInitializeOnLoadMethodAttributes (85ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 5.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (498.0 KB). Loaded Objects now: 7146.
+Memory consumption went from 237.1 MB to 236.7 MB.
+Total: 5.798800 ms (FindLiveObjects: 0.624600 ms CreateObjectMapping: 0.441800 ms MarkObjects: 4.414100 ms  DeleteObjects: 0.316800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 668.985575 seconds.
+  path: Assets/Art/uploads_files_2286740_build.obj
+  artifactKey: Guid(ae07ac2d95813524fb1d5281868b6825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/uploads_files_2286740_build.obj using Guid(ae07ac2d95813524fb1d5281868b6825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a48d337ad99c07b4eed53565ad11cf3') in 1.477565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 457
+========================================================================
+Received Import Request.
+  Time since last request: 37.679771 seconds.
+  path: Assets/Art/uploads_files_2286740_build.fbx
+  artifactKey: Guid(386b0858b25f4514c82e395b33ba2728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/uploads_files_2286740_build.fbx using Guid(386b0858b25f4514c82e395b33ba2728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70a4ba954a333ba73016ecec47d6591') in 0.436655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 134
+========================================================================
+Received Import Request.
+  Time since last request: 57.263256 seconds.
+  path: Assets/Art/uploads_files_2286740_build.fbx
+  artifactKey: Guid(386b0858b25f4514c82e395b33ba2728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/uploads_files_2286740_build.fbx using Guid(386b0858b25f4514c82e395b33ba2728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960748ff4b693ecf89d9b1c74eeff3ce') in 0.473477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 503.116803 seconds.
+  path: Assets/Paulisia_S
+  artifactKey: Guid(b1cc834c77b160a439fefae4ee904bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S using Guid(b1cc834c77b160a439fefae4ee904bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27bb67b8d20156a9f3a0462b1451346') in 0.000914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.980135 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets
+  artifactKey: Guid(765337843a4b93344b2b44b5e3d31d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets using Guid(765337843a4b93344b2b44b5e3d31d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187629685dcde0327c26976dc3a9efae') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.140864 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs
+  artifactKey: Guid(26ed4fb2bc7d82541941ebe82bc48c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs using Guid(26ed4fb2bc7d82541941ebe82bc48c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e571482096274603ef37ef2caeb6adc6') in 0.000565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.429194 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings
+  artifactKey: Guid(5984cf069e020894aa4a947c0752ecdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings using Guid(5984cf069e020894aa4a947c0752ecdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed57a49624cf58a771eb1ffc596c02c') in 0.000960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 36.778124 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles
+  artifactKey: Guid(8a82abff4961de44d9ea1947873aefa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles using Guid(8a82abff4961de44d9ea1947873aefa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8949ff227b8f64184e848e58eb980d') in 0.000619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.316164 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations
+  artifactKey: Guid(1d5e62def11556446b796ff832b05ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations using Guid(1d5e62def11556446b796ff832b05ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7763227bbea8ecfdaf31cc0c4a947c2e') in 0.000711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 394.553221 seconds.
+  path: Assets/Plugins/TDG Kiddy Rides/Models
+  artifactKey: Guid(725b5f1fcd5978844bb06f366919dd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TDG Kiddy Rides/Models using Guid(725b5f1fcd5978844bb06f366919dd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c087b84c07eab7ad1c769a2351130bba') in 0.013868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 36.208221 seconds.
+  path: Assets/Plugins/TDG Kiddy Rides/Materials
+  artifactKey: Guid(6d2bae67cfc60f14790afc6cdb5a6c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TDG Kiddy Rides/Materials using Guid(6d2bae67cfc60f14790afc6cdb5a6c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920e57dac9e3ff7471ec4601b957fc00') in 0.000594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 97.031253 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab
+  artifactKey: Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab using Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b084c2a109d786c4e9cb65ee968d48') in 0.021896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.479525 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab
+  artifactKey: Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab using Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055ec56c4a354ca64161abce00e0c479') in 0.012283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 2.752166 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab
+  artifactKey: Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab using Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71bc1f2c94cb70bb19723de9ca9d8b0') in 0.021010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.100027 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab
+  artifactKey: Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab using Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef1162f6140ebc944d7c278a01f4076') in 0.011213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.480228 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab
+  artifactKey: Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab using Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4604a6d7f739313e4ab4f8c3eef4f1e') in 0.057491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.915091 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab
+  artifactKey: Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab using Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f1b6368aebe686e52bd6ed343f3dd5') in 0.023324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 12.350723 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab
+  artifactKey: Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/cinema.prefab using Guid(7a3ec7b4b9f458c4581bd407a56c1497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641b9954ace8e3c06588c0dc0852e4ce') in 0.030131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.866997 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab
+  artifactKey: Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab using Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1660fe9c8fc99f391c8179f633fcfc23') in 0.022459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.225378 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab
+  artifactKey: Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab using Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa908e5a24c7b4e25e0972d26abd40c') in 0.056871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.622068 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/fire_station.prefab
+  artifactKey: Guid(99c77392ba704a84d9c21d1a06b2ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/fire_station.prefab using Guid(99c77392ba704a84d9c21d1a06b2ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386efde3618a2e59f4176e5f9f9b6742') in 0.022282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.853627 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/fire_station.prefab
+  artifactKey: Guid(99c77392ba704a84d9c21d1a06b2ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/fire_station.prefab using Guid(99c77392ba704a84d9c21d1a06b2ed42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85994022f2f781eb016e3b56183bd239') in 0.015452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.581063 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab
+  artifactKey: Guid(719242d1ee4302442a846f9becffce96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab using Guid(719242d1ee4302442a846f9becffce96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5274c77fa9ba6e79f0f8683a7b5fb168') in 0.029974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.069806 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab
+  artifactKey: Guid(719242d1ee4302442a846f9becffce96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab using Guid(719242d1ee4302442a846f9becffce96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b35065779a18005d7a605e932bbede3') in 0.011495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 2.160680 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab
+  artifactKey: Guid(488152badeea9a0418acf602474df095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab using Guid(488152badeea9a0418acf602474df095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a680b5bc463a6183cd23312bae4fac') in 0.021299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 1.091076 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab
+  artifactKey: Guid(488152badeea9a0418acf602474df095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab using Guid(488152badeea9a0418acf602474df095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034974b0e67838e4b2626b58f62a2037') in 0.015660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 1.732172 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab
+  artifactKey: Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab using Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb1d09d36fed26632bcef1f1c739812') in 0.021694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.102237 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab
+  artifactKey: Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab using Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a894b2bebbb28ff643c848526c21d1') in 0.012899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.666287 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab
+  artifactKey: Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab using Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57e98354179680d06f9b56df3e8264a') in 0.020418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.930425 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab
+  artifactKey: Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab using Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e170c08269d43aea4f5a75ff2584e1') in 0.011766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.552950 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab
+  artifactKey: Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/green_house.prefab using Guid(5d4901dc0ac243545aae699af252555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06016a73216e533018cce1e235892ae7') in 0.017776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 6.975920 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab
+  artifactKey: Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab using Guid(379d23429c4da5844bea98027a9b338d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fddbae994a875a95ddd350a0387224') in 0.010760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.844682 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab
+  artifactKey: Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab using Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8191fa580d234d2722e891579391b5') in 0.028668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.902591 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab
+  artifactKey: Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab using Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fd642d64f69ba3d7af485664d95fc2') in 0.024710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.688527 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hotel.prefab
+  artifactKey: Guid(5f43dd5690e469d4fa935c77a9dcc028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hotel.prefab using Guid(5f43dd5690e469d4fa935c77a9dcc028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac7636e962c50c9e7a9d6e3d1670c54') in 0.032545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.952654 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hotel.prefab
+  artifactKey: Guid(5f43dd5690e469d4fa935c77a9dcc028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hotel.prefab using Guid(5f43dd5690e469d4fa935c77a9dcc028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2e51a2950f080d293885da68edf91d') in 0.025279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 4.160327 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/market.prefab
+  artifactKey: Guid(8702378c227d9ee45a5b4f594f4a62dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/market.prefab using Guid(8702378c227d9ee45a5b4f594f4a62dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2f03d6d2bfdba3abf47888b6c2f712') in 0.031453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.274553 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/market.prefab
+  artifactKey: Guid(8702378c227d9ee45a5b4f594f4a62dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/market.prefab using Guid(8702378c227d9ee45a5b4f594f4a62dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14826fa6bfc05eeb63c1afb14ed18b03') in 0.014155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.747044 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/pizzeria.prefab
+  artifactKey: Guid(a1b05943ecb77f24ea8f6feaa2d06ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/pizzeria.prefab using Guid(a1b05943ecb77f24ea8f6feaa2d06ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c404e903217fa52e3b6aa03a5e75a94') in 0.018821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.267256 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/pizzeria.prefab
+  artifactKey: Guid(a1b05943ecb77f24ea8f6feaa2d06ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/pizzeria.prefab using Guid(a1b05943ecb77f24ea8f6feaa2d06ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b22dc80232a3ac45e47ac17452b2de') in 0.014536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.617388 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab
+  artifactKey: Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab using Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2517881128f38808f95bb05786466d39') in 0.023222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.352451 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab
+  artifactKey: Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/police_station.prefab using Guid(e41eed048e843684ea1424dd6b101eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cef13e2acc3c1282417043b9ca35f50') in 0.015479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.574023 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab
+  artifactKey: Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab using Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66c492e1a58a66c1e039c82f23c3f80') in 0.021605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1.042198 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab
+  artifactKey: Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab using Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689f5f2ec4a782dbca214aef44937b5e') in 0.013855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.562726 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab
+  artifactKey: Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab using Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca9ab85793215f02a339b0fe78cf891') in 0.014333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 3.685810 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab
+  artifactKey: Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab using Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720d2683e972f5ffc10d78763cd27a6e') in 0.019442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 5.198726 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials
+  artifactKey: Guid(84101559c9a7d9d4fa6cfc7cd8198662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials using Guid(84101559c9a7d9d4fa6cfc7cd8198662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008f7eb7a3d0f29cbe48aa3f1f2421f4') in 0.000776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.268513 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Materials
+  artifactKey: Guid(54dcf8f9c3916d0438b89cb21d4610c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Materials using Guid(54dcf8f9c3916d0438b89cb21d4610c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '755c239081d29ce9ca9fbc1c487851e5') in 0.000677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.745253 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab
+  artifactKey: Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab using Guid(f05030334485c4240a1383d7bf388fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88aa5e55fca26e8d2df8ed25041c9570') in 0.010800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 22.090823 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab
+  artifactKey: Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab using Guid(53f03ca5793d34b45989557015343644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc0fdab8f93763914fdbcc86a4f79b8') in 0.011326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.663 seconds
+Refreshing native plugins compatible for Editor in 5.42 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.754 seconds
+Domain Reload Profiling: 2416ms
+	BeginReloadAssembly (252ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (335ms)
+		LoadAssemblies (430ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1755ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (715ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (507ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 3.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (489.8 KB). Loaded Objects now: 7200.
+Memory consumption went from 244.3 MB to 243.8 MB.
+Total: 4.645900 ms (FindLiveObjects: 0.616200 ms CreateObjectMapping: 0.236600 ms MarkObjects: 3.541200 ms  DeleteObjects: 0.250300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 388.267616 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(f33166935d9848a428f8624a9c2bdc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(f33166935d9848a428f8624a9c2bdc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e094adb68780d0de4d4be678683562') in 0.003485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.071449 seconds.
+  path: Assets/Plugins/Sweet Land GUI
+  artifactKey: Guid(a2f73cd031a8f4b4885e26dd26c94a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI using Guid(a2f73cd031a8f4b4885e26dd26c94a75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78fb04a14e461e37acfec16f7022b0d8') in 0.020272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.825329 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Prefabs
+  artifactKey: Guid(963a1e8f09477bb44a14bdb409a6f078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Prefabs using Guid(963a1e8f09477bb44a14bdb409a6f078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0834c522657b608630d935663c8a48') in 0.000821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.997985 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Prefabs/Add_Video_Button.prefab
+  artifactKey: Guid(a2a5e04f4b767304ab223ea716cb9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Prefabs/Add_Video_Button.prefab using Guid(a2a5e04f4b767304ab223ea716cb9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e682e8990b228308d65e8045c4639d0') in 0.032453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 9.306757 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Prefabs/reklama.prefab
+  artifactKey: Guid(a2a5e04f4b767304ab223ea716cb9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Prefabs/reklama.prefab using Guid(a2a5e04f4b767304ab223ea716cb9631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e4b4283ab5494106f0acdbbef1b124') in 0.003777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 37.192105 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Prefabs/Button_Exit Variant.prefab
+  artifactKey: Guid(74ba689a879ace048a2e4a9279e977cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Prefabs/Button_Exit Variant.prefab using Guid(74ba689a879ace048a2e4a9279e977cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8a437bc862f8e39dc24a6484175d77') in 0.020632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 81.244877 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Prefabs/Button_Music_On Variant.prefab
+  artifactKey: Guid(998363392bda22042b2230444d6c3352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Prefabs/Button_Music_On Variant.prefab using Guid(998363392bda22042b2230444d6c3352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58c21e4d9913578e4fbe17c5ddf1359') in 0.027669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 162.139840 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(a64068e3f39690b4b8674f669c6aec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(a64068e3f39690b4b8674f669c6aec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650be0b7413364a561da9cc5e6534b3c') in 0.000652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 167.551616 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites
+  artifactKey: Guid(7834960c49bddc7488e2b7ae0b50c170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites using Guid(7834960c49bddc7488e2b7ae0b50c170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b3f8a3b071d127d6b100184ccaf598') in 0.000955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.803269 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames
+  artifactKey: Guid(53fd7e705835a9d41a0296297ad35215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames using Guid(53fd7e705835a9d41a0296297ad35215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f32bbf5317e8196880acb914fb073c') in 0.000665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.412532 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px
+  artifactKey: Guid(caed8a2b0a279364a8fa6f2b88473764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px using Guid(caed8a2b0a279364a8fa6f2b88473764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773d4dd7518955b72805dd54b06ff26e') in 0.000778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 52.817241 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons
+  artifactKey: Guid(8b8a6fee6499c144b8f61f8b6694dee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons using Guid(8b8a6fee6499c144b8f61f8b6694dee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136495981428fdf3e8718d65a73c5d62') in 0.000874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 109.705392 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Scales
+  artifactKey: Guid(7106a5e0e3a50f143bf14637c711cf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Scales using Guid(7106a5e0e3a50f143bf14637c711cf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc561d53a194aefb8fc4788117c236d0') in 0.008399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.971741 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px
+  artifactKey: Guid(997a0d099b1a03d40812ba1680dd284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px using Guid(997a0d099b1a03d40812ba1680dd284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88ac876439815fcd182eb8d6b026932f') in 0.014559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.791457 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Animations
+  artifactKey: Guid(ec6fb48133957864bbce2f966ba5532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Animations using Guid(ec6fb48133957864bbce2f966ba5532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199963f174c341163ec20e088656ba3b') in 0.000649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.628562 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Scenes
+  artifactKey: Guid(8a7c6d6661b97bb4098161eac23ca40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Scenes using Guid(8a7c6d6661b97bb4098161eac23ca40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64afcb47b4b67479a7fbc77192464c61') in 0.000846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.514969 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks
+  artifactKey: Guid(dfa33c6a129a70c44a332224ccb51f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks using Guid(dfa33c6a129a70c44a332224ccb51f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f01c16242b9c66137b3e9d66ad626ed') in 0.000622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.632 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.011 seconds
+Domain Reload Profiling: 2643ms
+	BeginReloadAssembly (199ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (349ms)
+		LoadAssemblies (432ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (23ms)
 			TypeCache.Refresh (8ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (13ms)
-	FinalizeReload (1685ms)
+	FinalizeReload (2012ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (698ms)
+		SetupLoadedEditorAssemblies (743ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (104ms)
-			ProcessInitializeOnLoadAttributes (483ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (506ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 4.85 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 4.96 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (506.3 KB). Loaded Objects now: 7129.
-Memory consumption went from 240.4 MB to 239.9 MB.
-Total: 5.792200 ms (FindLiveObjects: 0.736500 ms CreateObjectMapping: 0.578900 ms MarkObjects: 4.139500 ms  DeleteObjects: 0.335600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 307.868636 seconds.
-  path: Assets/Scripts/Movement.cs
-  artifactKey: Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Movement.cs using Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7691ae30bba71a8bf933b680c287f4b') in 0.022742 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 342.346557 seconds.
-  path: Assets/Scripts/Movement.cs
-  artifactKey: Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Movement.cs using Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd181871a6373fef67404336ff2fd242') in 0.000643 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.031 seconds
-Refreshing native plugins compatible for Editor in 6.05 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 25.806 seconds
-Domain Reload Profiling: 26835ms
-	BeginReloadAssembly (233ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (705ms)
-		LoadAssemblies (781ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (63ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (34ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (25806ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (745ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (50ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (482ms)
-			ProcessInitializeOnLoadMethodAttributes (76ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 5.75 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (506.3 KB). Loaded Objects now: 7146.
-Memory consumption went from 242.3 MB to 241.8 MB.
-Total: 5.480600 ms (FindLiveObjects: 0.657900 ms CreateObjectMapping: 0.669000 ms MarkObjects: 3.875600 ms  DeleteObjects: 0.276300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 300.261722 seconds.
-  path: Assets/Scripts/Movement.cs
-  artifactKey: Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Movement.cs using Guid(dfcbcc9786f44fb4aa53b184e2c68b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94355938af90b964a4f150f73b7e4dc4') in 0.006425 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.974 seconds
-Refreshing native plugins compatible for Editor in 4.43 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.943 seconds
-Domain Reload Profiling: 2917ms
-	BeginReloadAssembly (206ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (687ms)
-		LoadAssemblies (737ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (64ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1944ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (728ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (503ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Refreshing native plugins compatible for Editor in 8.46 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (482.2 KB). Loaded Objects now: 7163.
-Memory consumption went from 244.2 MB to 243.8 MB.
-Total: 5.422300 ms (FindLiveObjects: 0.737400 ms CreateObjectMapping: 0.582300 ms MarkObjects: 3.824700 ms  DeleteObjects: 0.276700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.608 seconds
-Refreshing native plugins compatible for Editor in 4.53 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.739 seconds
-Domain Reload Profiling: 2347ms
-	BeginReloadAssembly (211ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (311ms)
-		LoadAssemblies (408ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (22ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1740ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (719ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (497ms)
-			ProcessInitializeOnLoadMethodAttributes (88ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (23ms)
-Refreshing native plugins compatible for Editor in 5.86 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (506.7 KB). Loaded Objects now: 7180.
+Unloading 55 unused Assets / (491.7 KB). Loaded Objects now: 7217.
 Memory consumption went from 246.2 MB to 245.7 MB.
-Total: 5.332100 ms (FindLiveObjects: 0.690200 ms CreateObjectMapping: 0.548400 ms MarkObjects: 3.808000 ms  DeleteObjects: 0.284200 ms)
+Total: 4.947300 ms (FindLiveObjects: 0.687600 ms CreateObjectMapping: 0.280700 ms MarkObjects: 3.717800 ms  DeleteObjects: 0.259800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -599,51 +977,51 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.601 seconds
-Refreshing native plugins compatible for Editor in 4.41 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.595 seconds
+Refreshing native plugins compatible for Editor in 5.69 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.654 seconds
-Domain Reload Profiling: 2256ms
-	BeginReloadAssembly (194ms)
+- Finished resetting the current domain, in  1.685 seconds
+Domain Reload Profiling: 2280ms
+	BeginReloadAssembly (214ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (49ms)
 	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (12ms)
 	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (333ms)
-		LoadAssemblies (409ms)
+	LoadAllAssembliesAndSetupDomain (307ms)
+		LoadAssemblies (399ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (22ms)
 			TypeCache.Refresh (7ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1655ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1685ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (635ms)
+		SetupLoadedEditorAssemblies (700ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (90ms)
-			ProcessInitializeOnLoadAttributes (424ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (496ms)
 			ProcessInitializeOnLoadMethodAttributes (86ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 5.71 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 5.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (498.3 KB). Loaded Objects now: 7197.
+Unloading 54 unused Assets / (498.0 KB). Loaded Objects now: 7234.
 Memory consumption went from 248.1 MB to 247.6 MB.
-Total: 5.455400 ms (FindLiveObjects: 0.627300 ms CreateObjectMapping: 0.532200 ms MarkObjects: 3.936400 ms  DeleteObjects: 0.358000 ms)
+Total: 6.489200 ms (FindLiveObjects: 1.164400 ms CreateObjectMapping: 0.621500 ms MarkObjects: 4.437700 ms  DeleteObjects: 0.263700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -661,72 +1039,294 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 859.436193 seconds.
-  path: Assets/Art/Materials/t.cs
-  artifactKey: Guid(e59f1bae8e3cd4147a4f9b985e1147ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Materials/t.cs using Guid(e59f1bae8e3cd4147a4f9b985e1147ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f307bb9ad830257ab9ddc83a7259268f') in 0.007530 seconds
+  Time since last request: 1304.661358 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Honey_250px.png
+  artifactKey: Guid(5740ce6920a41bd4abb924ef16b7379a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Honey_250px.png using Guid(5740ce6920a41bd4abb924ef16b7379a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190276c1cabea7427147e9e130ded12d') in 0.188424 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.876 seconds
-Refreshing native plugins compatible for Editor in 4.26 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 31.192 seconds
-Domain Reload Profiling: 32068ms
-	BeginReloadAssembly (206ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (586ms)
-		LoadAssemblies (673ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (25ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (31193ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (595ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (405ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 5.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6357 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (490.3 KB). Loaded Objects now: 7214.
-Memory consumption went from 250.1 MB to 249.6 MB.
-Total: 6.489400 ms (FindLiveObjects: 0.624300 ms CreateObjectMapping: 0.565900 ms MarkObjects: 4.995500 ms  DeleteObjects: 0.302200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_White_250px.png
+  artifactKey: Guid(086b56c038a639a49ae469fbc85d6a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_White_250px.png using Guid(086b56c038a639a49ae469fbc85d6a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbe99149125f8d058a6b2c55b9c3d09') in 0.026708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Square_White_60px.png
+  artifactKey: Guid(2fb165919b2cf6e448380a015dbbd833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Square_White_60px.png using Guid(2fb165919b2cf6e448380a015dbbd833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c18dff7ed058f97115ddc5fca5bb27') in 0.035662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Orange_250px.png
+  artifactKey: Guid(95332da0e346cb345ac3ece62a649e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Orange_250px.png using Guid(95332da0e346cb345ac3ece62a649e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b585d372050454806825c4d58155c18e') in 0.021922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Red_250px.png
+  artifactKey: Guid(23bedb961464d2b4092de591a9e6f7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Square_Red_250px.png using Guid(23bedb961464d2b4092de591a9e6f7b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fadf2ca5760a9a49feea2ae0af2ccf') in 0.024700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Square_Red_60px.png
+  artifactKey: Guid(8e36233d9e012294e88c9e2c02c71323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Square_Red_60px.png using Guid(8e36233d9e012294e88c9e2c02c71323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3278fdf6c925dad86375aa82ccdd68fd') in 0.018395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.693697 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Honey_60px.png
+  artifactKey: Guid(5a913210048a08c4ea6edee5c4cc7eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Honey_60px.png using Guid(5a913210048a08c4ea6edee5c4cc7eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e870825298c752e41406b062515a0556') in 0.021782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.093819 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Orange_60px.png
+  artifactKey: Guid(1e7ef0c8019deb0418d9528abeaffa75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Orange_60px.png using Guid(1e7ef0c8019deb0418d9528abeaffa75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87b3bb09f766d9f9352ce95e74e6697') in 0.049597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013349 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Pink_60px.png
+  artifactKey: Guid(8532639a88f0b4246bee805e7c4afbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Pink_60px.png using Guid(8532639a88f0b4246bee805e7c4afbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02493c6752f2c45ef04800c80721709b') in 0.023490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.089253 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Red_60px.png
+  artifactKey: Guid(d410096a4fb2e334c867cf09203cdcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Red_60px.png using Guid(d410096a4fb2e334c867cf09203cdcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0db76e44b147114dd51d5839cfffe0') in 0.018478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Trapezoid_White_250px.png
+  artifactKey: Guid(ded19d0d721dc40429acf3d21af699e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/250px/Frame_Trapezoid_White_250px.png using Guid(ded19d0d721dc40429acf3d21af699e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f895757b2182d458cc8295ff5a187ed') in 0.024128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Yellow_60px.png
+  artifactKey: Guid(f5044f680eafb274eb5f8be06105df67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Frames/60px/Frame_Trapezoid_Yellow_60px.png using Guid(f5044f680eafb274eb5f8be06105df67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137f45c7d919922cba2a89e37815bb51') in 0.022895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002027 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Heart.png
+  artifactKey: Guid(69138f6b03c8c9c44bda0ff26e983dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Heart.png using Guid(69138f6b03c8c9c44bda0ff26e983dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0455f36aff22017b7f1df87c6e5b3b7f') in 0.021214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.468959 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Exit.png
+  artifactKey: Guid(28f55185a3006934aa19ce36dc350b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Exit.png using Guid(28f55185a3006934aa19ce36dc350b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1023fd2a47af7192e9162c86826f6f7a') in 0.071673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Pause.png
+  artifactKey: Guid(f7531c55aa5e400418161d9ec43b80fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Pause.png using Guid(f7531c55aa5e400418161d9ec43b80fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe1e5da55181c47a6002f15da82c727') in 0.047494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Settings.png
+  artifactKey: Guid(00280b2b82f0cdd488aed522cbff996c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Settings.png using Guid(00280b2b82f0cdd488aed522cbff996c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb5c820fd4f03ee8c9a0b56dbb6eaad') in 0.017394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Restart.png
+  artifactKey: Guid(a13d484535fd36046b5f8420a5df4dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Icon_Restart.png using Guid(a13d484535fd36046b5f8420a5df4dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8a895d7e7649487acb1e4f783f286c') in 0.023995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.641857 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_BG.png
+  artifactKey: Guid(9d11b6d41971b684bb23524570531608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_BG.png using Guid(9d11b6d41971b684bb23524570531608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138cc0ead7ae521a8f7305cfe02f652b') in 0.027544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_Fire_Jelly.png
+  artifactKey: Guid(23bc116911b8cf84ea296ea3534a7f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_Fire_Jelly.png using Guid(23bc116911b8cf84ea296ea3534a7f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99aa8126ca39186b0d6434c0042b7e19') in 0.025830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.026357 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_Walk_Jelly.png
+  artifactKey: Guid(8d00ad584047669458dff31e6af9c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/Joystick_Walk_Jelly.png using Guid(8d00ad584047669458dff31e6af9c333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34bd348e6dce80a7629318454bbeb615') in 0.019025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010204 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/PowerUp_Not_Ready_Cookie.png
+  artifactKey: Guid(60b438f752713a241ad308ebac8ce1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/PowerUp_Not_Ready_Cookie.png using Guid(60b438f752713a241ad308ebac8ce1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '416c8a1164b4b7dc403e4e2aef8cf753') in 0.036078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028133 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/PowerUp_Ready_Cookie.png
+  artifactKey: Guid(62687ca798f59aa41a5bf81e0b8001c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Joysticks/PowerUp_Ready_Cookie.png using Guid(62687ca798f59aa41a5bf81e0b8001c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ea2ccc28bddbc19247a29e6392665c') in 0.019235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010336 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_Green_60px.png
+  artifactKey: Guid(9ffd4b1f45387c74d8031b8dbc20b2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_Green_60px.png using Guid(9ffd4b1f45387c74d8031b8dbc20b2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719bd1265c5a113c217f14c0852ad487') in 0.023511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.602119 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_Pink_60px.png
+  artifactKey: Guid(48a8d071a52f75a4591f787d22559fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_Pink_60px.png using Guid(48a8d071a52f75a4591f787d22559fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5998e96f97dd104dd1470971e37059') in 0.018523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.095296 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_White_60px.png
+  artifactKey: Guid(943ab2c4066436840b63a2a2aa95cb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Scales/Scale_Honey_White_60px.png using Guid(943ab2c4066436840b63a2a2aa95cb28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9131ecc06a858516c1c307761801e58') in 0.093133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.019459 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Icons/Add_Video_Plate.png
+  artifactKey: Guid(fee5099eda8d20a49a06af50b6940979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Icons/Add_Video_Plate.png using Guid(fee5099eda8d20a49a06af50b6940979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e304b5900220dc5a0299cdd0eb321369') in 0.032438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Circle_Pink_60px.png
+  artifactKey: Guid(2317820899dd90b41adae1778d4aa5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Circle_Pink_60px.png using Guid(2317820899dd90b41adae1778d4aa5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af93b7ef8cb57b492251a14bd07ddce3') in 0.023008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Circle_Pink_250px.png
+  artifactKey: Guid(45fe05bcf3cbbcf44becfa76de67e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Circle_Pink_250px.png using Guid(45fe05bcf3cbbcf44becfa76de67e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b8aca24ed3e506583128eb3d42d7d2') in 0.024335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002894 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Circle_White_60px.png
+  artifactKey: Guid(468940470262cb842a4da2c15098b6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Circle_White_60px.png using Guid(468940470262cb842a4da2c15098b6a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1bce44b0fdfcc44541018e3c8165f7') in 0.030454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.085721 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Circle_Yellow_250px.png
+  artifactKey: Guid(1987ed91fa70e9546b25c7ea53e82e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Circle_Yellow_250px.png using Guid(1987ed91fa70e9546b25c7ea53e82e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d6797c0b335bb17ec40effe2ddb277') in 0.045398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.479247 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Honeycomb_Orange_250px.png
+  artifactKey: Guid(6eeeb501250deb4499a3609c22c5b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Honeycomb_Orange_250px.png using Guid(6eeeb501250deb4499a3609c22c5b496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb4bdd99db32e681c3b8b15c76c6b5a') in 0.025562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.069696 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Honeycomb_Red_250px.png
+  artifactKey: Guid(596fc1e33e032ce45a091003bf7d6857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Honeycomb_Red_250px.png using Guid(596fc1e33e032ce45a091003bf7d6857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d348a4b759046530fbcb3b0dd698a6') in 0.020260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.091510 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Square_Orange_60px.png
+  artifactKey: Guid(061aa5c4cee7ba941bf5eb4fe5e5585c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/60px/Button_Square_Orange_60px.png using Guid(061aa5c4cee7ba941bf5eb4fe5e5585c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbacefae89f1a6b6e68a7da8c5739636') in 0.020163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.454113 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_Pink_250px.png
+  artifactKey: Guid(20ae63630a343e140bb218808370bcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_Pink_250px.png using Guid(20ae63630a343e140bb218808370bcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df89dbea82898ecbf4e2a045a1ed4ec9') in 0.021101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028361 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_Red_250px.png
+  artifactKey: Guid(823f604ed7828444789ba54e0a454587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_Red_250px.png using Guid(823f604ed7828444789ba54e0a454587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f612619a052f8626c8c2c28141676e') in 0.021836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.223474 seconds.
+  path: Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_White_250px.png
+  artifactKey: Guid(b60d54988a19f42429620bd8abcb3b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sweet Land GUI/Sprites/Buttons/250px/Button_Square_White_250px.png using Guid(b60d54988a19f42429620bd8abcb3b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fa929be2041228bfba7ce39b135717') in 0.018864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
