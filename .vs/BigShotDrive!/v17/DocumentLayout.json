@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "E:\\Mareatan\\GitHub\\BigShotDrive!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\path.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,11 +33,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Path.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Path.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Path.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Path.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Path.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:54:25.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Movement.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
@@ -41,12 +58,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAowE0AAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T00:14:39.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T00:14:39.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SimpleCarMove.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\SimpleCarMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SimpleCarMove.cs",
@@ -54,12 +70,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SimpleCarMove.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAkwBcAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:46:49.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:46:49.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HeroShooting.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\shooter\\Assets\\scripts\\Scene2Scripts\\HeroShooting.cs",
               "RelativeDocumentMoniker": "..\\shooter\\Assets\\scripts\\Scene2Scripts\\HeroShooting.cs",
@@ -71,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "buttons.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\buttons.cs",
@@ -84,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "simpleMove.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\simpleMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\simpleMove.cs",
