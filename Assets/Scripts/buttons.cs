@@ -12,8 +12,10 @@ public class buttons : MonoBehaviour
     [SerializeField] private OnButtonClick LvlButton;
     [SerializeField] private GameObject Score;
     [SerializeField] private TextMeshProUGUI LvlName;
+    [SerializeField] private GameObject settings;
 
     private string chooseLvl = "";
+    private ContrManager contrManager;
     public void StartGame()
     {
         ChooseLvlWindow.SetActive(true);
@@ -21,6 +23,7 @@ public class buttons : MonoBehaviour
 
     public void ToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -47,5 +50,47 @@ public class buttons : MonoBehaviour
     public void LoadLvl()
     {
         SceneManager.LoadScene(chooseLvl);
+    }
+
+    public void Settings()
+    {
+        settings.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void CloseSettings()
+    {
+        Time.timeScale = 1;
+        settings.SetActive(false);   
+    }
+
+    public void RestartLvl1()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Lvl1");
+    }
+
+    public void GameplayPC()
+    {
+        if (contrManager == null)
+        {
+            contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
+        }
+        else
+        {
+            contrManager.gameplayPC = true;
+        }
+    }
+
+    public void GameplayMobile()
+    {
+        if (contrManager == null)
+        {
+            contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
+        }
+        else
+        {
+            contrManager.gameplayPC = false;
+        }
     }
 }

@@ -23,31 +23,45 @@ public class Movement : MonoBehaviour
     private bool stopRequested = false;
     private float moveInput, rotateInput, currentVelocityOffset;
     private float currentZTilt = 0f;
+    public ContrManager contrManager;
 
     float rayLength;
     RaycastHit hit;
+
+    private void Awake()
+    {
+        GetComponent<PlayerInput>().ActivateInput();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        if (contrManager == null)
+        {
+            contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
+
+            if (!contrManager.gameplayPC && stopButton != null)
+            {
+                // Добавляем триггеры для кнопки
+                var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
+                                  stopButton.gameObject.AddComponent<EventTrigger>();
+
+                // Нажатие
+                var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
+                pointerDown.callback.AddListener((data) => { stopRequested = true; });
+                eventTrigger.triggers.Add(pointerDown);
+
+                // Отпускание
+                var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
+                pointerUp.callback.AddListener((data) => { stopRequested = false; });
+                eventTrigger.triggers.Add(pointerUp);
+            }
+        }
+
         CircleRb.transform.parent = null;
         BikeRb.transform.parent = null;
 
-        if (stopButton != null)
-        {
-            // Добавляем триггеры для кнопки
-            var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
-                              stopButton.gameObject.AddComponent<EventTrigger>();
-
-            // Нажатие
-            var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
-            pointerDown.callback.AddListener((data) => { stopRequested = true; });
-            eventTrigger.triggers.Add(pointerDown);
-
-            // Отпускание
-            var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
-            pointerUp.callback.AddListener((data) => { stopRequested = false; });
-            eventTrigger.triggers.Add(pointerUp);
-        }
+        
 
         rayLength = CircleRb.transform.GetComponent<SphereCollider>().radius * CircleRb.transform.localScale.y + 0.3f;
 
@@ -60,13 +74,13 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (slider.value == 0)
+        if (!contrManager.gameplayPC)
         {
             Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
             moveInput = joystickInput.y;    // Вперёд / назад
             rotateInput = joystickInput.x;  // Влево / вправо
         }
-        else if (slider.value == 1)
+        else if (contrManager.gameplayPC)
         {
             moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
             rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
