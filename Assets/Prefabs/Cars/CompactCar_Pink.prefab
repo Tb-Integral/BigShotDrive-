@@ -99,7 +99,7 @@ Transform:
   m_GameObject: {fileID: 1669029952952197274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00053276855, y: -0.009549677, z: -0.04756957}
+  m_LocalPosition: {x: 0.00053276855, y: -0.718, z: -2.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -308,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 3066928543536892625}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7084503, z: -1.9544306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -505,6 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1862051840236622810}
   - component: {fileID: 6521306645374431269}
+  - component: {fileID: 8599461382132744568}
   m_Layer: 0
   m_Name: CompactCar_Pink
   m_TagString: Untagged
@@ -521,7 +522,7 @@ Transform:
   m_GameObject: {fileID: 3770246381092558621}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5981402, y: -2.999998, z: 31.297949}
+  m_LocalPosition: {x: 1.5981402, y: 1.43, z: 31.297949}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -539,8 +540,8 @@ Rigidbody:
   m_GameObject: {fileID: 3770246381092558621}
   serializedVersion: 4
   m_Mass: 1200
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.1
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -555,8 +556,28 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &8599461382132744568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3770246381092558621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c1fd286e6dd394bbf7408306633bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: {fileID: 0}
+  maxAngle: 45
+  maxMotorTorque: 2700
+  currentSpeed: 0
+  maxSpeed: 100
+  inversion: 0
+  WheelFL: {fileID: 7537391181421306050}
+  WheelFR: {fileID: 3663540530776071145}
 --- !u!1 &3890615919871731114
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +709,7 @@ Transform:
   m_GameObject: {fileID: 4758290550377137693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7084503, z: -1.9544306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

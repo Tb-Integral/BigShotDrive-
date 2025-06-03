@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CarAI : MonoBehaviour
 {
+    public string nextTarget;
     public Transform path;
     public float maxAngle = 45f;
     public float maxMotorTorque;
@@ -29,16 +30,19 @@ public class CarAI : MonoBehaviour
 
         foreach (Transform node in nodes)
         {
+            
             Vector3 currentTargetVector = node.position - transform.position;
-            if ( (Vector3.Angle(currentTargetVector, transform.forward) < 10f) && (currentTargetVector).magnitude < minVectorToTarget.magnitude)
+
+            if ( (Vector3.Angle(currentTargetVector, transform.forward) < 5f) && ((currentTargetVector).magnitude < minVectorToTarget.magnitude))
             {
                 minVectorToTarget = node.position - transform.position;
 
                 currentNode = nodes.IndexOf(node);
             }
         }
+        transform.GetComponent<Rigidbody>().velocity = maxSpeed/2 * transform.forward;
 
-        Debug.Log(nodes[currentNode].name);
+        nextTarget = nodes[currentNode].name;
     }
 
     private void FixedUpdate()
@@ -46,7 +50,7 @@ public class CarAI : MonoBehaviour
         WheelRotate();
         CarMovement();
         CheckNextTarget();
-        Debug.Log($"Speed: {currentSpeed}, Torque: {WheelFL.motorTorque}");
+        Debug.DrawLine(transform.position, transform.position + 5 * transform.forward, Color.red);
 
     }
 
@@ -55,13 +59,16 @@ public class CarAI : MonoBehaviour
         Vector3 nextTargetNode = transform.InverseTransformPoint(nodes[currentNode].position);
         float newSteer = (nextTargetNode.x / nextTargetNode.magnitude) * maxAngle;
 
+        float speedReduction = 1f - Mathf.Abs(newSteer) / maxAngle * 0.7f;
+        maxSpeed = Mathf.Lerp(30f, 140f, speedReduction);
+
         WheelFL.steerAngle = newSteer;
         WheelFR.steerAngle = newSteer;
     }
 
     private void CarMovement()
     {
-        currentSpeed = 2 * Mathf.PI * WheelFL.radius * WheelFL.rpm * 60 / 1000;
+        //currentSpeed = 2 * Mathf.PI * WheelFL.radius * WheelFL.rpm * 60 / 1000;
 
         if (currentSpeed < maxSpeed)
         {
@@ -73,13 +80,11 @@ public class CarAI : MonoBehaviour
             WheelFL.motorTorque = 0;
             WheelFR.motorTorque = 0;
         }
-        GetComponent<Rigidbody>().AddForce(-transform.up * 1000f); // прижимная сила к земле
-
     }
 
     private void CheckNextTarget()
     {
-        if (Vector3.Distance(transform.position, nodes[currentNode].position) < 3f)
+        if (Vector3.Distance(transform.position, nodes[currentNode].position) < 4f)
         {
             if (inversion)
             {
@@ -103,7 +108,7 @@ public class CarAI : MonoBehaviour
                     currentNode = 0;
                 }
             }
-            Debug.Log(nodes[currentNode].name);
+            nextTarget = nodes[currentNode].name;
         }
     }
 }

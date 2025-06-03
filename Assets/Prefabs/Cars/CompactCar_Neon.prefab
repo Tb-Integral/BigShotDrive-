@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 497529082001542714}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.6704503, z: -1.8104305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 1251830871715000667}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.6704503, z: -1.8104305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -222,6 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5127216398852265211}
   - component: {fileID: 1109432812370325336}
+  - component: {fileID: -357983391771860835}
   m_Layer: 0
   m_Name: CompactCar_Neon
   m_TagString: Untagged
@@ -238,7 +239,7 @@ Transform:
   m_GameObject: {fileID: 3120160964061333177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0412636, y: -3.000002, z: 30.14812}
+  m_LocalPosition: {x: 2.0412636, y: 1.31, z: 30.14812}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -256,8 +257,8 @@ Rigidbody:
   m_GameObject: {fileID: 3120160964061333177}
   serializedVersion: 4
   m_Mass: 1200
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.1
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -272,8 +273,28 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &-357983391771860835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3120160964061333177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c1fd286e6dd394bbf7408306633bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: {fileID: 0}
+  maxAngle: 45
+  maxMotorTorque: 2700
+  currentSpeed: 0
+  maxSpeed: 100
+  inversion: 0
+  WheelFL: {fileID: 6408490848894004373}
+  WheelFR: {fileID: 8728430333575267872}
 --- !u!1 &3441918053034533105
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 3486675246327656466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00053276855, y: -0.009549677, z: -0.04756957}
+  m_LocalPosition: {x: 0.00053276855, y: -0.68, z: -1.858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
