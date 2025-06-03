@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 510331639161527462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.64145035, z: -1.8774303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -222,6 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300772480642560839}
   - component: {fileID: 8013463082279168897}
+  - component: {fileID: -4232883625573978242}
   m_Layer: 0
   m_Name: CompactCar_Gray
   m_TagString: Untagged
@@ -238,7 +239,7 @@ Transform:
   m_GameObject: {fileID: 1383407593884990917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6809235, y: -2.9999962, z: 28.992012}
+  m_LocalPosition: {x: 2.6809235, y: 1.25, z: 28.992012}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -256,8 +257,8 @@ Rigidbody:
   m_GameObject: {fileID: 1383407593884990917}
   serializedVersion: 4
   m_Mass: 1200
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.1
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -272,8 +273,28 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &-4232883625573978242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383407593884990917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c1fd286e6dd394bbf7408306633bb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: {fileID: 0}
+  maxAngle: 45
+  maxMotorTorque: 2700
+  currentSpeed: 0
+  maxSpeed: 100
+  inversion: 0
+  WheelFL: {fileID: 5538955235134524480}
+  WheelFR: {fileID: 581114631356309828}
 --- !u!1 &1654917199773291826
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +320,7 @@ Transform:
   m_GameObject: {fileID: 1654917199773291826}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.64145035, z: -1.8774303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -514,7 +535,7 @@ Transform:
   m_GameObject: {fileID: 3399352399397955030}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00053276855, y: -0.009549677, z: -0.04756957}
+  m_LocalPosition: {x: 0.00053276855, y: -0.651, z: -1.925}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

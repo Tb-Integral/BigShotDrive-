@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,7 +47,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CarAI.cs",
               "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CarAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\CarAI.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwDAAAABLAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswDQAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T13:51:54.439Z",
               "EditorCaption": ""
@@ -62,8 +62,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Path.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T22:54:25.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T22:54:25.381Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAApwCgAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T00:14:39.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T00:14:39.078Z"
             },
             {
               "$type": "Document",
