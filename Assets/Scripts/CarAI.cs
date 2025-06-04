@@ -25,21 +25,41 @@ public class CarAI : MonoBehaviour
             .Where(node => node.transform != path.transform)
             .ToList();
 
-        //Transform minDirection = nodes[currentNode];
-        Vector3 minVectorToTarget = nodes[currentNode].position - transform.position;
 
+        Vector3 minVectorToTarget = nodes[currentNode].position - transform.position;
+        float minAngle = 10f;
         foreach (Transform node in nodes)
         {
-            
             Vector3 currentTargetVector = node.position - transform.position;
 
-            if ( (Vector3.Angle(currentTargetVector, transform.forward) < 5f) && ((currentTargetVector).magnitude < minVectorToTarget.magnitude))
+            if ((Vector3.Angle(currentTargetVector, transform.forward) < minAngle))
             {
-                minVectorToTarget = node.position - transform.position;
-
-                currentNode = nodes.IndexOf(node);
+                minAngle = Vector3.Angle(currentTargetVector, transform.forward);
+                if ((currentTargetVector).magnitude < minVectorToTarget.magnitude)
+                {
+                    minVectorToTarget = node.position - transform.position;
+                    currentNode = nodes.IndexOf(node);
+                }
             }
         }
+
+        if (currentNode == nodes.Count - 1)
+        {
+            if (((Vector3.Angle(nodes[currentNode].position - transform.position, transform.forward))) > (Vector3.Angle(nodes[0].position - transform.position, transform.forward)))
+            {
+                currentNode = 0;
+            }
+        }
+        else
+        {
+            if (((Vector3.Angle(nodes[currentNode].position - transform.position, transform.forward))) > (Vector3.Angle(nodes[currentNode + 1].position - transform.position, transform.forward)))
+            {
+                currentNode++;
+            }
+        }
+
+
+
         transform.GetComponent<Rigidbody>().velocity = maxSpeed/2 * transform.forward;
 
         nextTarget = nodes[currentNode].name;
@@ -109,6 +129,7 @@ public class CarAI : MonoBehaviour
                 }
             }
             nextTarget = nodes[currentNode].name;
+            transform.GetComponent<Rigidbody>().velocity /= 1.1f;
         }
     }
 }
