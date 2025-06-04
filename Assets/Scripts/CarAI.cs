@@ -5,26 +5,24 @@ using UnityEngine;
 
 public class CarAI : MonoBehaviour
 {
-    public string nextTarget;
     public Transform path;
     public float maxAngle = 45f;
     public float maxMotorTorque;
     public float currentSpeed;
     public float maxSpeed = 100f;
-    public bool inversion = false;
+    public float NextCarStop = 15f;
 
     [SerializeField] private WheelCollider WheelFL;
     [SerializeField] private WheelCollider WheelFR;
 
     private List<Transform> nodes;
     private int currentNode;
-    // Start is called before the first frame update
+
     void Start()
     {
         nodes = path.GetComponentsInChildren<Transform>()
             .Where(node => node.transform != path.transform)
             .ToList();
-
 
         Vector3 minVectorToTarget = nodes[currentNode].position - transform.position;
         float minAngle = 10f;
@@ -58,11 +56,20 @@ public class CarAI : MonoBehaviour
             }
         }
 
-
-
         transform.GetComponent<Rigidbody>().velocity = maxSpeed/2 * transform.forward;
+    }
 
-        nextTarget = nodes[currentNode].name;
+    private void Update()
+    {
+        Ray ray = new Ray(transform.position, transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, NextCarStop))
+        {
+            if (hit.transform.tag == "Car")
+            {
+                transform.GetComponent<Rigidbody>().velocity /= 10f;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -70,8 +77,6 @@ public class CarAI : MonoBehaviour
         WheelRotate();
         CarMovement();
         CheckNextTarget();
-        Debug.DrawLine(transform.position, transform.position + 5 * transform.forward, Color.red);
-
     }
 
     private void WheelRotate()
@@ -88,8 +93,6 @@ public class CarAI : MonoBehaviour
 
     private void CarMovement()
     {
-        //currentSpeed = 2 * Mathf.PI * WheelFL.radius * WheelFL.rpm * 60 / 1000;
-
         if (currentSpeed < maxSpeed)
         {
             WheelFL.motorTorque = maxMotorTorque;
@@ -106,30 +109,15 @@ public class CarAI : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, nodes[currentNode].position) < 4f)
         {
-            if (inversion)
+            if (currentNode != nodes.Count - 1)
             {
-                if (currentNode != 0)
-                {
-                    currentNode -= 1;
-                }
-                else
-                {
-                    currentNode = nodes.Count - 1;
-                }
+                currentNode += 1;
             }
             else
             {
-                if (currentNode != nodes.Count - 1)
-                {
-                    currentNode += 1;
-                }
-                else
-                {
-                    currentNode = 0;
-                }
+                currentNode = 0;
             }
-            nextTarget = nodes[currentNode].name;
-            transform.GetComponent<Rigidbody>().velocity /= 1.1f;
+            transform.GetComponent<Rigidbody>().velocity = maxSpeed / 7 * transform.forward;
         }
     }
 }

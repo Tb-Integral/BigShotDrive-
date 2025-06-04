@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: -8047363573051994107}
   m_Layer: 0
   m_Name: CompactCar_Black
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -393,12 +393,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c1fd286e6dd394bbf7408306633bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextTarget: 
   path: {fileID: 0}
   maxAngle: 45
-  maxMotorTorque: 2700
+  maxMotorTorque: 4000
   currentSpeed: 0
-  maxSpeed: 100
-  inversion: 0
+  maxSpeed: 70
+  NextCarStop: 15
   WheelFL: {fileID: 2647376251186371827}
   WheelFR: {fileID: 6821621578345509446}
 --- !u!1 &6832694059484851309
