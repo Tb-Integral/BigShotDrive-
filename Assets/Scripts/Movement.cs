@@ -33,7 +33,6 @@ public class Movement : MonoBehaviour
         GetComponent<PlayerInput>().ActivateInput();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         if (contrManager == null)
@@ -71,7 +70,6 @@ public class Movement : MonoBehaviour
         skidMarks2.emitting = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!contrManager.gameplayPC)
@@ -103,7 +101,6 @@ public class Movement : MonoBehaviour
         {
             if (!Input.GetKey(KeyCode.Space) || !stopRequested)
             {
-
                 Acceleration();
             }
             Rotation();
@@ -128,7 +125,6 @@ public class Movement : MonoBehaviour
     void BikeTilt()
     {
         Ray ray = new Ray(CircleRb.position, Vector3.down);
-        Debug.DrawRay(ray.origin, ray.direction * (rayLength + 3f), Color.red);
         Physics.Raycast(ray, out hit, rayLength + 3f, derivableSurface);
         // 1. Ќаклон по X (вперЄд/назад) по поверхности
         float xRot = (Quaternion.FromToRotation(BikeRb.transform.up, hit.normal) * BikeRb.transform.rotation).eulerAngles.x;
@@ -141,7 +137,7 @@ public class Movement : MonoBehaviour
         }
 
         // 3. ѕлавно интерполируем Z-наклон
-        currentZTilt = Mathf.Lerp(currentZTilt, targetZTilt, Time.fixedDeltaTime * 5f); // 5 Ч скорость сглаживани€
+        currentZTilt = Mathf.Lerp(currentZTilt, targetZTilt, Time.fixedDeltaTime * 4f); // 5 Ч скорость сглаживани€
 
         // 4. —обираем итоговый поворот
         Quaternion targetRot = Quaternion.Euler(xRot, transform.eulerAngles.y, currentZTilt);
