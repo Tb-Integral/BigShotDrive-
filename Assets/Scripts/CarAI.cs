@@ -17,7 +17,6 @@ public class CarAI : MonoBehaviour
 
     private List<Transform> nodes;
     private int currentNode;
-    private bool IsStoped = false;
 
     void Start()
     {

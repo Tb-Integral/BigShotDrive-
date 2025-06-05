@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     private bool stopRequested = false;
     private float moveInput, rotateInput, currentVelocityOffset;
     private float currentZTilt = 0f;
-    public ContrManager contrManager;
+    private ContrManager contrManager;
 
     float rayLength;
     RaycastHit hit;
