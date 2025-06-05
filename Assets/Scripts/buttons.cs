@@ -36,12 +36,14 @@ public class buttons : MonoBehaviour
 
     public void Lvl2()
     {
+        Time.timeScale = 1;
         chooseLvl = "Lvl2";
         Score.SetActive(true);
         LvlName.text = "Уровень 2";
     }
     public void Lvl3()
     {
+        Time.timeScale = 1;
         chooseLvl = "Lvl3";
         Score.SetActive(true);
         LvlName.text = "Уровень 3";
@@ -49,6 +51,7 @@ public class buttons : MonoBehaviour
 
     public void LoadLvl()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(chooseLvl);
     }
 
