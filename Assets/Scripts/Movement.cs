@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 
         
 
-        rayLength = CircleRb.transform.GetComponent<SphereCollider>().radius * CircleRb.transform.localScale.y + 0.3f;
+        rayLength = CircleRb.transform.GetComponent<SphereCollider>().radius * CircleRb.transform.localScale.y + 0.7f;
 
         skidMarks1.startWidth = skidWildth;
         skidMarks1.emitting = false;
@@ -115,8 +115,29 @@ public class Movement : MonoBehaviour
 
     void Rotation()
     {
-        transform.Rotate(0, rotateInput * currentVelocityOffset * rotateStrength * Time.fixedDeltaTime, 0, Space.World);
+        bool isBraking = (Input.GetKey(KeyCode.Space) || stopRequested);
+
+        if (isBraking && Mathf.Abs(rotateInput) > 0.1f)
+        {
+            float sharpTurnStrength = rotateStrength * 1.5f;
+            transform.Rotate(
+                0,
+                rotateInput * sharpTurnStrength * Time.fixedDeltaTime,
+                0,
+                Space.World
+            );
+        }
+        else
+        {
+            transform.Rotate(
+                0,
+                rotateInput * currentVelocityOffset * rotateStrength * Time.fixedDeltaTime,
+                0,
+                Space.World
+            );
+        }
     }
+
 
     private void Acceleration()
     {
