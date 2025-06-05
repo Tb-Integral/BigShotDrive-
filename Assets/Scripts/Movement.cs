@@ -75,8 +75,26 @@ public class Movement : MonoBehaviour
         if (!contrManager.gameplayPC)
         {
             Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
-            moveInput = joystickInput.y;    // Вперёд / назад
-            rotateInput = joystickInput.x;  // Влево / вправо
+
+            rotateInput = joystickInput.x;
+
+            if (joystickInput.magnitude > 0.05f)
+            {
+                Vector2 normalizedInput = joystickInput.normalized;
+
+                if (normalizedInput.y > 0.2f)
+                {
+                    moveInput = 1f;
+                }
+                else
+                {
+                    moveInput = joystickInput.y;
+                }
+            }
+            else
+            {
+                moveInput = 0f;
+            }
         }
         else if (contrManager.gameplayPC)
         {

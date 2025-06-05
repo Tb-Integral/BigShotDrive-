@@ -103,7 +103,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: b9de06a963e1db4458d800ac7e8ac51d, type: 3}
 --- !u!1 &1545496526912012509
@@ -358,7 +358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c1fd286e6dd394bbf7408306633bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextTarget: 
   path: {fileID: 0}
   maxAngle: 45
   maxMotorTorque: 4000
@@ -540,7 +539,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: b9de06a963e1db4458d800ac7e8ac51d, type: 3}
 --- !u!1 &4911322714197461825
@@ -646,7 +645,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: b9de06a963e1db4458d800ac7e8ac51d, type: 3}
 --- !u!1 &6331145879944910859
@@ -1000,7 +999,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300008, guid: b9de06a963e1db4458d800ac7e8ac51d, type: 3}
 --- !u!1 &9034550852722442901

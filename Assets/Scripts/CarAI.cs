@@ -17,6 +17,7 @@ public class CarAI : MonoBehaviour
 
     private List<Transform> nodes;
     private int currentNode;
+    private bool IsStoped = false;
 
     void Start()
     {
@@ -67,7 +68,7 @@ public class CarAI : MonoBehaviour
         {
             if (hit.transform.tag == "Car" || hit.transform.tag == "Player")
             {
-                transform.GetComponent<Rigidbody>().velocity /= 10f;
+                transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
             }
         }
     }
