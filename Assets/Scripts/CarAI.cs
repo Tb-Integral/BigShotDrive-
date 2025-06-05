@@ -10,7 +10,7 @@ public class CarAI : MonoBehaviour
     public float maxMotorTorque;
     public float currentSpeed;
     public float maxSpeed = 100f;
-    public float NextCarStop = 15f;
+    public float NextCarStop = 10f;
 
     [SerializeField] private WheelCollider WheelFL;
     [SerializeField] private WheelCollider WheelFR;
@@ -63,7 +63,7 @@ public class CarAI : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, NextCarStop))
+        if (Physics.SphereCast(ray, 8f, out hit, NextCarStop))
         {
             if (hit.transform.tag == "Car")
             {

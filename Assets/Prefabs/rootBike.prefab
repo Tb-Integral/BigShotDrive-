@@ -625,6 +625,7 @@ MonoBehaviour:
   derivableSurface:
     serializedVersion: 2
     m_Bits: 256
+  contrManager: {fileID: 0}
 --- !u!1001 &1393928915640496342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1871,6 +1872,10 @@ PrefabInstance:
     - target: {fileID: 5113221064256842022, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113221064256842022, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5347081890496185856, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
       propertyPath: m_Layer
