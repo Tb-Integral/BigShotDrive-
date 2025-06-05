@@ -65,7 +65,7 @@ public class CarAI : MonoBehaviour
         RaycastHit hit;
         if (Physics.SphereCast(ray, 8f, out hit, NextCarStop))
         {
-            if (hit.transform.tag == "Car")
+            if (hit.transform.tag == "Car" || hit.transform.tag == "Player")
             {
                 transform.GetComponent<Rigidbody>().velocity /= 10f;
             }
