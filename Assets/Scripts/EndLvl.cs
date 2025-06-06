@@ -10,6 +10,7 @@ public class EndLvl : MonoBehaviour
     [SerializeField] private CoinManager coinManager;
     [SerializeField] private TextMeshProUGUI coins;
     [SerializeField] private TextMeshProUGUI score;
+    [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private TextMeshProUGUI mark;
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,8 @@ public class EndLvl : MonoBehaviour
             Time.timeScale = 0;
             finish.SetActive(true);
             coins.text = "Заработано: $" + coinManager.CoinEnd().ToString();
+            score.text = "Счет: " + coinManager.ScoreEnd().ToString();
+            timer.text = coinManager.TimerEnd(coinManager.timeElapsed).ToString();
         }
     }
 }
