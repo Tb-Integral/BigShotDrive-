@@ -121,6 +121,7 @@ public class Movement : MonoBehaviour
             {
                 Acceleration();
             }
+            //Nitro();
             Rotation();
             Brake();
         }
