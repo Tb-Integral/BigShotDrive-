@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -11,19 +12,28 @@ public class Movement : MonoBehaviour
     [SerializeField] private InputActionReference Joystick;
     [SerializeField] private Slider slider;
     [SerializeField] private Button stopButton;
+    [SerializeField] private float nitroDuration = 2f; // Длительность нитро
+    [SerializeField] private float nitroRechargeRate = 0.5f; // Скорость восстановления
+    [SerializeField] private float nitroDrainRate = 1f; // Скорость расхода
+    [SerializeField] private InputActionReference nitroButton;
+    [SerializeField] private RectTransform nitroEffects;
     [HideInInspector] public Vector3 velocity;
     public TrailRenderer skidMarks1;
     public TrailRenderer skidMarks2;
+    public float NirtoSpeed;
 
     public float maxSpeed, acceleration, rotateStrength, gravity, bikeTiltInc, zTiltAngle = 45f, skidWildth = 0.062f, minSkidVelocity = 10f, norDrag = 2f, driftDrag = 0.5f;
     [Range(1, 10)]
     public float brakingFactor;
     public LayerMask derivableSurface;
 
-    private bool stopRequested = false;
+    private bool stopRequested = false, IsNitroActive = false;
     private float moveInput, rotateInput, currentVelocityOffset;
     private float currentZTilt = 0f;
     private ContrManager contrManager;
+    private float nitroCharge = 1f; // от 0 до 1
+    private float originalMaxSpeed;
+    private bool nitroReleased = true;
 
     float rayLength;
     RaycastHit hit;
@@ -60,7 +70,7 @@ public class Movement : MonoBehaviour
         CircleRb.transform.parent = null;
         BikeRb.transform.parent = null;
 
-        
+        originalMaxSpeed = maxSpeed;
 
         rayLength = CircleRb.transform.GetComponent<SphereCollider>().radius * CircleRb.transform.localScale.y + 0.7f;
 
@@ -72,8 +82,10 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        bool nitroKeyPressed = false;
         if (!contrManager.gameplayPC)
         {
+            nitroKeyPressed = nitroButton.action.IsPressed();
             Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
 
             rotateInput = joystickInput.x;
@@ -98,6 +110,7 @@ public class Movement : MonoBehaviour
         }
         else if (contrManager.gameplayPC)
         {
+            nitroKeyPressed = Input.GetKey(KeyCode.LeftShift);
             moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
             rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
         }
@@ -105,6 +118,53 @@ public class Movement : MonoBehaviour
 
         velocity = BikeRb.transform.InverseTransformDirection(BikeRb.velocity);
         currentVelocityOffset = velocity.z / maxSpeed;
+
+        if (nitroCharge == 0f)
+        {
+            nitroReleased = true;
+        }
+        else if (nitroCharge == 1f)
+        {
+            nitroReleased = false;
+        }
+
+        if (nitroKeyPressed && nitroCharge > 0f && !nitroReleased)
+        {
+            if (!IsNitroActive)
+            {
+                IsNitroActive = true;
+                maxSpeed = NirtoSpeed;
+            }
+
+            nitroCharge -= nitroDrainRate * Time.deltaTime;
+            nitroCharge = Mathf.Clamp01(nitroCharge);
+        }
+        else
+        {
+            if (nitroReleased || !nitroKeyPressed)
+            {
+                if (IsNitroActive)
+                {
+                    IsNitroActive = false;
+                    maxSpeed = originalMaxSpeed;
+                }
+
+
+                nitroCharge += nitroRechargeRate * Time.deltaTime;
+                nitroCharge = Mathf.Clamp01(nitroCharge);
+            }
+        }
+
+        float targetScale = IsNitroActive ? 1f : 2f;
+        Vector3 currentScale = nitroEffects.localScale;
+        nitroEffects.localScale = Vector3.Lerp(currentScale, new Vector3(targetScale, targetScale, targetScale), Time.deltaTime * 10f);
+
+        if (slider != null)
+        {
+            slider.value = nitroCharge;
+        }
+
+        Debug.Log(nitroCharge);
     }
 
     private void FixedUpdate()
@@ -121,7 +181,6 @@ public class Movement : MonoBehaviour
             {
                 Acceleration();
             }
-            //Nitro();
             Rotation();
             Brake();
         }

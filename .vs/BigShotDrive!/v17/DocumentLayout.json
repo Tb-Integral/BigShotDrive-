@@ -57,32 +57,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ScoreBikeTrigger.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ScoreBikeTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreBikeTrigger.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ScoreBikeTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ScoreBikeTrigger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:09:19.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CoinManager.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinManager.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAswFUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:37:39.223Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -133,6 +109,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAiwI8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T00:14:39.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinManager.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswFUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:37:39.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScoreBikeTrigger.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ScoreBikeTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreBikeTrigger.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ScoreBikeTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoreBikeTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T10:09:19.848Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Path.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Path.cs",
@@ -142,19 +155,6 @@
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T22:54:25.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Movement.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBMAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T00:14:39.078Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
