@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 7213965506872871543}
   m_Layer: 0
   m_Name: Car_Main
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   maxMotorTorque: 4000
   currentSpeed: 0
   maxSpeed: 70
-  NextCarStop: 15
+  NextCarStop: 8
   WheelFL: {fileID: 3370040179173218012}
   WheelFR: {fileID: 5053884146396049588}
 --- !u!1 &9191755727826308494
