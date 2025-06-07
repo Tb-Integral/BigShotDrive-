@@ -33,7 +33,7 @@ public class EndLvl : MonoBehaviour
             cool = (int)coinManager.CoolScoreEnd();
             nitro = (int)coinManager.NitroScoreEnd();
             time = ((int)coinManager.TimeScoreEnd());
-            timeScorePoints = time < 31 ? 500 : time < 41 ? 300 : 0;
+            timeScorePoints = time < 31 ? 800 : time < 41 ? 600 : 0;
             totalScorePoints = cool + nitro + timeScorePoints;
             totalMark = totalScorePoints > 1800 ? "S" : totalScorePoints > 1700 ? "A" : totalScorePoints > 1600 ? "B" : totalScorePoints > 1400 ? "C" : totalScorePoints > 1200 ? "D" : "F";
 
