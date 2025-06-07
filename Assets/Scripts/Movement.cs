@@ -21,13 +21,13 @@ public class Movement : MonoBehaviour
     public TrailRenderer skidMarks1;
     public TrailRenderer skidMarks2;
     public float NirtoSpeed;
-
+    public bool IsNitroActive = false;
     public float maxSpeed, acceleration, rotateStrength, gravity, bikeTiltInc, zTiltAngle = 45f, skidWildth = 0.062f, minSkidVelocity = 10f, norDrag = 2f, driftDrag = 0.5f;
     [Range(1, 10)]
     public float brakingFactor;
     public LayerMask derivableSurface;
 
-    private bool stopRequested = false, IsNitroActive = false;
+    private bool stopRequested = false; 
     private float moveInput, rotateInput, currentVelocityOffset;
     private float currentZTilt = 0f;
     private ContrManager contrManager;
@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
     private float originalMaxSpeed;
     private bool nitroReleased = true;
 
+    bool nitroKeyPressed = false;
     float rayLength;
     RaycastHit hit;
 
@@ -82,7 +83,9 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        bool nitroKeyPressed = false;
+        transform.position = CircleRb.transform.position;
+
+        
         if (!contrManager.gameplayPC)
         {
             nitroKeyPressed = nitroButton.action.IsPressed();
@@ -114,57 +117,9 @@ public class Movement : MonoBehaviour
             moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
             rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
         }
-        transform.position = CircleRb.transform.position;
 
         velocity = BikeRb.transform.InverseTransformDirection(BikeRb.velocity);
         currentVelocityOffset = velocity.z / maxSpeed;
-
-        if (nitroCharge == 0f)
-        {
-            nitroReleased = true;
-        }
-        else if (nitroCharge == 1f)
-        {
-            nitroReleased = false;
-        }
-
-        if (nitroKeyPressed && nitroCharge > 0f && !nitroReleased)
-        {
-            if (!IsNitroActive)
-            {
-                IsNitroActive = true;
-                maxSpeed = NirtoSpeed;
-            }
-
-            nitroCharge -= nitroDrainRate * Time.deltaTime;
-            nitroCharge = Mathf.Clamp01(nitroCharge);
-        }
-        else
-        {
-            if (nitroReleased || !nitroKeyPressed)
-            {
-                if (IsNitroActive)
-                {
-                    IsNitroActive = false;
-                    maxSpeed = originalMaxSpeed;
-                }
-
-
-                nitroCharge += nitroRechargeRate * Time.deltaTime;
-                nitroCharge = Mathf.Clamp01(nitroCharge);
-            }
-        }
-
-        float targetScale = IsNitroActive ? 1f : 2f;
-        Vector3 currentScale = nitroEffects.localScale;
-        nitroEffects.localScale = Vector3.Lerp(currentScale, new Vector3(targetScale, targetScale, targetScale), Time.deltaTime * 10f);
-
-        if (slider != null)
-        {
-            slider.value = nitroCharge;
-        }
-
-        Debug.Log(nitroCharge);
     }
 
     private void FixedUpdate()
@@ -182,6 +137,7 @@ public class Movement : MonoBehaviour
                 Acceleration();
             }
             Rotation();
+            Nitro();
             Brake();
         }
         else
@@ -189,6 +145,53 @@ public class Movement : MonoBehaviour
             Gravity();
         }
         BikeTilt();
+    }
+
+    void Nitro()
+    {
+        if (nitroCharge == 0f)
+        {
+            nitroReleased = true;
+        }
+        else if (nitroCharge == 1f)
+        {
+            nitroReleased = false;
+        }
+
+        if (nitroKeyPressed && nitroCharge > 0f && !nitroReleased && moveInput != 0)
+        {
+            if (!IsNitroActive)
+            {
+                IsNitroActive = true;
+                maxSpeed = NirtoSpeed;
+            }
+
+            nitroCharge -= nitroDrainRate * Time.deltaTime;
+            nitroCharge = Mathf.Clamp01(nitroCharge);
+        }
+        else
+        {
+            if (nitroReleased || !nitroKeyPressed || moveInput == 0)
+            {
+                if (IsNitroActive)
+                {
+                    IsNitroActive = false;
+                    maxSpeed = originalMaxSpeed;
+                }
+
+                nitroCharge += nitroRechargeRate * Time.deltaTime;
+                nitroCharge = Mathf.Clamp01(nitroCharge);
+            }
+        }
+
+        float targetScale = IsNitroActive ? 1f : 2f;
+        Vector3 currentScale = nitroEffects.localScale;
+        nitroEffects.localScale = Vector3.Lerp(currentScale, new Vector3(targetScale, targetScale, targetScale), Time.deltaTime * 10f);
+
+        if (slider != null)
+        {
+            slider.value = nitroCharge;
+        }
     }
 
     void Rotation()

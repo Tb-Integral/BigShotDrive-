@@ -10,9 +10,11 @@ public class CoinManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI coinText;
     [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private GameObject CloseCarScoreWindow;
-    [SerializeField] private RectTransform canvas;
+    [SerializeField] private Transform LinesFolder;
+    [SerializeField] private Movement bike;
     public int coins = 0;
-    public int score = 0;
+    public float coolScore = 0;
+    public float nitroScore = 0;
     public float timeElapsed = 0f;
 
     private string[] CloseCarLines = {"Это было близко!", "Круто!", "Учи других\nездить!", "Не Формула-1,\nно ты близок!", "Ювелирно!", "Ты чё, каскадёр?!", "Адреналин\nв норме!", "По лезвию ножа!" };
@@ -21,6 +23,8 @@ public class CoinManager : MonoBehaviour
     {
         timeElapsed += Time.deltaTime;
         timer.text = UpdateTimerDisplay(timeElapsed);
+
+        if (bike.IsNitroActive) nitroScore += 0.2f;
     }
 
     public void RefreshCoinText()
@@ -37,9 +41,19 @@ public class CoinManager : MonoBehaviour
         return coins;
     }
 
-    public int ScoreEnd()
+    public float CoolScoreEnd()
     {
-        return score;
+        return coolScore;
+    }
+
+    public float NitroScoreEnd()
+    {
+        return nitroScore;
+    }
+
+    public float TimeScoreEnd()
+    {
+        return timeElapsed;
     }
 
     public string TimerEnd(float _time)
@@ -49,7 +63,7 @@ public class CoinManager : MonoBehaviour
 
     private IEnumerator CarLines()
     {
-        GameObject window = Instantiate(CloseCarScoreWindow, canvas);
+        GameObject window = Instantiate(CloseCarScoreWindow, LinesFolder);
 
         Text textComponent = window.transform.Find("CarLine").GetComponent<Text>();
         textComponent.text = CloseCarLines[Random.Range(0, CloseCarLines.Length)];
