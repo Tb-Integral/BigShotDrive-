@@ -11,7 +11,7 @@ public class ScoreBikeTrigger : MonoBehaviour
     {
         if (other.transform.tag == "Car")
         {
-            scoreManager.score += 100;
+            scoreManager.coolScore += 100;
             scoreManager.RefreshScoreText();
         }
     }
