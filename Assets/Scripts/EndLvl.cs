@@ -17,6 +17,7 @@ public class EndLvl : MonoBehaviour
     [SerializeField] private TextMeshProUGUI timer;
     [SerializeField] private TextMeshProUGUI mark;
 
+    int coinsPoints = 0;
     int cool = 0;
     int nitro = 0;
     int time = 0;
@@ -30,6 +31,7 @@ public class EndLvl : MonoBehaviour
             Time.timeScale = 0;
             finish.SetActive(true);
 
+            coinsPoints = coinManager.CoinEnd();
             cool = (int)coinManager.CoolScoreEnd();
             nitro = (int)coinManager.NitroScoreEnd();
             time = ((int)coinManager.TimeScoreEnd());
@@ -37,7 +39,7 @@ public class EndLvl : MonoBehaviour
             totalScorePoints = cool + nitro + timeScorePoints;
             totalMark = totalScorePoints > 1800 ? "S" : totalScorePoints > 1700 ? "A" : totalScorePoints > 1600 ? "B" : totalScorePoints > 1400 ? "C" : totalScorePoints > 1200 ? "D" : "F";
 
-            coins.text = "Заработано: $" + coinManager.CoinEnd().ToString();
+            coins.text = "Заработано: $" + coinsPoints.ToString();
             coolScore.text = "Крутой счет: " + cool.ToString();
             nitroScore.text = "Счет за нитро: " + nitro.ToString();
             timeScore.text = "Счет за время: " + timeScorePoints.ToString();
@@ -45,5 +47,27 @@ public class EndLvl : MonoBehaviour
             mark.text = "Оценка: " + totalMark;
             timer.text = coinManager.TimerEnd(coinManager.timeElapsed).ToString();
         }
+    }
+
+    public void EndLvlAndSaveResults()
+    {
+        PlayerPrefs.SetInt("balance", PlayerPrefs.GetInt("balance")+ coinsPoints);
+        if (SceneManager.GetActiveScene().name == "Lvl1" && (totalScorePoints > PlayerPrefs.GetInt("lvl1Score")))
+        {
+            PlayerPrefs.SetInt("lvl1Score", totalScorePoints);
+            PlayerPrefs.SetString("lvl1Mark", totalMark);
+        }
+        else if (SceneManager.GetActiveScene().name == "Lvl2" && (totalScorePoints > PlayerPrefs.GetInt("lvl2Score")))
+        {
+            PlayerPrefs.SetInt("lvl2Score", totalScorePoints);
+            PlayerPrefs.SetString("lvl2Mark", totalMark);
+        }
+        else if (SceneManager.GetActiveScene().name == "Lvl3" && (totalScorePoints > PlayerPrefs.GetInt("lvl3Score")))
+        {
+            PlayerPrefs.SetInt("lvl3Score", totalScorePoints);
+            PlayerPrefs.SetString("lvl3Mark", totalMark);
+        }
+
+        SceneManager.LoadScene("MainMenu");
     }
 }
