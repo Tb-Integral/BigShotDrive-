@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\Mareatan\\GitHub\\BigShotDrive!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -90,8 +90,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ContrManager.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:43:29.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T16:43:29.545Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "RelativeToolTip": "Assets\\Scripts\\EndLvl.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAgwEQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:47:13.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T10:47:13.283Z"
             },
             {
               "$type": "Document",
@@ -140,8 +138,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAYwEQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:37:39.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T17:37:39.223Z"
             },
             {
               "$type": "Document",
@@ -151,7 +148,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\buttons.cs",
               "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
               "RelativeToolTip": "Assets\\Scripts\\buttons.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
+              "ViewState": "AQIAAGgAAAAAAAAAAADgv30AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T22:38:47.979Z",
               "EditorCaption": ""
@@ -166,8 +163,7 @@
               "RelativeToolTip": "Assets\\Scripts\\ScoreBikeTrigger.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:09:19.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-06T10:09:19.848Z"
             },
             {
               "$type": "Document",
@@ -179,8 +175,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Path.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T22:54:25.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T22:54:25.381Z"
             },
             {
               "$type": "Document",
@@ -192,8 +187,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SimpleCarMove.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:46:49.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:46:49.665Z"
             },
             {
               "$type": "Document",

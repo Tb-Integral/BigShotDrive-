@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6089299047058664628}
   - component: {fileID: 1831718003508344097}
   - component: {fileID: 7484388473219205162}
+  - component: {fileID: 6113341733314456174}
   m_Layer: 5
   m_Name: ShopItem
   m_TagString: Untagged
@@ -122,7 +123,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1831718003508344097}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6217450770663369269, guid: 925a9ae79f5b08949aaa1159179c0f8c, type: 3}
+        m_TargetAssemblyTypeName: buttons, Assembly-CSharp
+        m_MethodName: BuyColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6113341733314456174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388543296598825791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef6fd19ef377be48875de73ecb1526e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4243223400030740678
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 2.2999878}
+  m_AnchoredPosition: {x: 0, y: 2.300003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5228086789907968978
