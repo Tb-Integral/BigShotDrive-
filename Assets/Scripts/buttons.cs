@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -17,7 +19,13 @@ public class buttons : MonoBehaviour
     [SerializeField] private GameObject lvlChoice;
 
     private string chooseLvl = "";
-    private ContrManager contrManager;
+    public ContrManager contrManager;
+
+    private void Start()
+    {
+        contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
+    }
+
     public void StartGame()
     {
         ChooseLvlWindow.SetActive(true);
@@ -72,13 +80,13 @@ public class buttons : MonoBehaviour
     public void Shop()
     {
         shop.SetActive(true);
-        shop.transform.Find("balance").transform.GetComponentInChildren<TextMeshProUGUI>().text = PlayerPrefs.GetInt("balance").ToString() + "$";        
+        shop.transform.Find("balance").transform.GetComponentInChildren<TextMeshProUGUI>().text = PlayerPrefs.GetInt("balance").ToString() + "$";
     }
 
     public void CloseSettings()
     {
         Time.timeScale = 1;
-        settings.SetActive(false);   
+        settings.SetActive(false);
     }
 
     public void CloseShop()
@@ -99,25 +107,52 @@ public class buttons : MonoBehaviour
 
     public void GameplayPC()
     {
-        if (contrManager == null)
-        {
-            contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
-        }
-        else
-        {
-            contrManager.gameplayPC = true;
-        }
+        contrManager.gameplayPC = true;
+
     }
 
     public void GameplayMobile()
     {
-        if (contrManager == null)
+
+        contrManager.gameplayPC = false;
+
+    }
+
+    public void BuyColor()
+    {
+        GameObject clickedButton = EventSystem.current.currentSelectedGameObject;
+        ShopItem shopItem = clickedButton.GetComponent<ShopItem>();
+
+        if (!shopItem.IsBuyed)
         {
-            contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
+            if (PlayerPrefs.GetInt("balance") >= 200)
+            {
+                //contrManager = GameObject.Find("ControllerManager")?.GetComponent<ContrManager>();
+                //contrManager.ChangeColor(clickedButton.GetComponent<ShopItem>().color);
+
+                //clickedButton.transform.Find("Price").GetComponent<TextMeshProUGUI>().text = "Покрасить";
+
+                PlayerPrefs.SetInt("balance", PlayerPrefs.GetInt("balance") - 200);
+
+                Transform shop = GameObject.Find("Canvas").transform.Find("Shop").Find("balance");
+                shop.GetComponentInChildren<TextMeshProUGUI>().text = PlayerPrefs.GetInt("balance").ToString() + "$";
+
+                if (clickedButton.transform.name == "ShopItemGreen") PlayerPrefs.SetInt("greenBikeSkin", 1);
+                if (clickedButton.transform.name == "ShopItemBlue") PlayerPrefs.SetInt("blueBikeSkin", 1);
+                if (clickedButton.transform.name == "ShopItemPink") PlayerPrefs.SetInt("pinkBikeSkin", 1);
+                if (clickedButton.transform.name == "ShopItemGold") PlayerPrefs.SetInt("goldBikeSkin", 1);
+                if (clickedButton.transform.name == "ShopItemWhite") PlayerPrefs.SetInt("whiteBikeSkin", 1);
+            }
         }
-        else
+        else if (!shopItem.IsEquiped)
         {
-            contrManager.gameplayPC = false;
+            if (clickedButton.transform.name == "ShopItemRed") PlayerPrefs.SetString("equipColor", "red");
+            if (clickedButton.transform.name == "ShopItemGreen") PlayerPrefs.SetString("equipColor", "green");
+            if (clickedButton.transform.name == "ShopItemBlue") PlayerPrefs.SetString("equipColor", "blue");
+            if (clickedButton.transform.name == "ShopItemPink") PlayerPrefs.SetString("equipColor", "pink");
+            if (clickedButton.transform.name == "ShopItemGold") PlayerPrefs.SetString("equipColor", "gold");
+            if (clickedButton.transform.name == "ShopItemWhite") PlayerPrefs.SetString("equipColor", "white");
         }
+        shopItem.SwitchColors();
     }
 }
