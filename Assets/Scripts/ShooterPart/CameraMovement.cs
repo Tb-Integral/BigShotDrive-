@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,10 +10,13 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private InputActionReference Joystick;
     [SerializeField] private GameObject canvas;
     [SerializeField] private GameObject weapon;
+    [SerializeField] private Camera _camera;
 
     public float XRorate = 30f;
     public float YRorate = 30f;
     public float sensitivity = 1f;
+
+    private Animator animator;
 
     private ContrManager contrManager;
     private float moveInput, rotateInput;
@@ -20,6 +24,7 @@ public class CameraMovement : MonoBehaviour
 
     private float pitch = 0f;
     private float yaw = 0f;
+    private bool CanIShoot = true;
 
     private void Awake()
     {
@@ -85,6 +90,25 @@ public class CameraMovement : MonoBehaviour
 
             transform.rotation = Quaternion.Euler(pitch, yaw, 0);
         }
+
+        //shooting
+        if (Input.GetMouseButton(0) && CanIShoot)
+        {
+            Vector3 point = new(_camera.pixelWidth / 2, _camera.pixelHeight / 2, 0);
+            Ray ray = _camera.ScreenPointToRay(point);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                animator.Play("weaponShoot");
+                if (hit.transform.tag == "enemy")
+                {
+                    hit.transform.root.GetComponent<EnemyMovement>().Atacked();
+                    CanIShoot = false;
+                }
+                StartCoroutine(CoolDown());
+            }
+        }
     }
 
     private IEnumerator Anim()
@@ -95,5 +119,13 @@ public class CameraMovement : MonoBehaviour
         transform.GetComponent<CinemachineVirtualCamera>().Priority += 1;
         canvas.SetActive(true);
         CanIMove = true;
+        animator = transform.GetComponentInChildren<Animator>();
+    }
+
+    private IEnumerator CoolDown()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.StopPlayback();
+        CanIShoot = true;
     }
 }
