@@ -232,12 +232,12 @@ MonoBehaviour:
   nitroDuration: 2
   nitroRechargeRate: 0.5
   nitroDrainRate: 1
-  nitroButton: {fileID: 0}
+  nitroButton: {fileID: 4785818606628811635, guid: 210b93ff4ff063a458df721b794ac3fa, type: 3}
   nitroEffects: {fileID: 0}
   velocity: {x: 0, y: 0, z: 0}
   skidMarks1: {fileID: 8010066844147503936}
   skidMarks2: {fileID: 3251722126445099747}
-  NirtoSpeed: 0
+  NirtoSpeed: 200
   IsNitroActive: 0
   maxSpeed: 115
   acceleration: 6
@@ -297,9 +297,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9787511, b: 0.7971698, a: 1}
+  m_Color: {r: 0.5518868, g: 0.8694581, b: 1, a: 1}
   m_Intensity: 2559.23
-  m_Range: 186.41
+  m_Range: 569.1
   m_SpotAngle: 104.22789
   m_InnerSpotAngle: 35.841297
   m_CookieSize: 10
@@ -332,7 +332,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -502,7 +502,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &3950582805667132600
 GameObject:
@@ -699,7 +699,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5347081890496185856, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4246730724588360306}
+    - targetCorrespondingSourceObject: {fileID: 5347081890496185856, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 790866330566926447}
   m_SourcePrefab: {fileID: 100100000, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
 --- !u!54 &4331421637292970968 stripped
 Rigidbody:
@@ -711,3 +717,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5601950012283204508, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
   m_PrefabInstance: {fileID: 2756359888255394538}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7814915306193298666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5347081890496185856, guid: 43aa11631c440864caf49deac02a51c5, type: 3}
+  m_PrefabInstance: {fileID: 2756359888255394538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4246730724588360306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814915306193298666}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9930801, y: 1.3503319, z: 3.08378}
+  m_Center: {x: 0.0032725865, y: 0.8455924, z: 0.097400665}
+--- !u!114 &790866330566926447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814915306193298666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfef7e84236a72f41bb04ca734a71fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}

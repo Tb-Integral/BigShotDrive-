@@ -46,6 +46,11 @@ public class buttons : MonoBehaviour
         Score.transform.Find("mark").transform.GetComponentInChildren<TextMeshProUGUI>().text = "Оценка: " + PlayerPrefs.GetString("lvl1Mark");
     }
 
+    public void Lvl1Shooter()
+    {
+        SceneManager.LoadScene("Lvl1Shooter");
+    }
+
     public void Lvl2()
     {
         Time.timeScale = 1;
@@ -127,11 +132,6 @@ public class buttons : MonoBehaviour
         {
             if (PlayerPrefs.GetInt("balance") >= 200)
             {
-                //contrManager = GameObject.Find("ControllerManager")?.GetComponent<ContrManager>();
-                //contrManager.ChangeColor(clickedButton.GetComponent<ShopItem>().color);
-
-                //clickedButton.transform.Find("Price").GetComponent<TextMeshProUGUI>().text = "Покрасить";
-
                 PlayerPrefs.SetInt("balance", PlayerPrefs.GetInt("balance") - 200);
 
                 Transform shop = GameObject.Find("Canvas").transform.Find("Shop").Find("balance");
