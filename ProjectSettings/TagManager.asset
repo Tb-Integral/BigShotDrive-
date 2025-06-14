@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Car
   - InvisWall
+  - enemy
+  - deadEnemy
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - EndLvl
   - InvisWal
   - Car
-  - 
-  - 
+  - Enemy
+  - DeadEnemy
   - 
   - 
   - 
