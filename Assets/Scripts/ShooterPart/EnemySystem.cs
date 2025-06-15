@@ -15,7 +15,7 @@ public class EnemySystem : MonoBehaviour
 
     private bool IsGameStarted = false;
     private bool[] enemysOchered = {false, false, false};
-    private int deaths = 0;
+    public int deaths = 0;
     // Start is called before the first frame update
     void Start()
     {
