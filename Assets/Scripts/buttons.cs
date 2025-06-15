@@ -46,11 +46,6 @@ public class buttons : MonoBehaviour
         Score.transform.Find("mark").transform.GetComponentInChildren<TextMeshProUGUI>().text = "ќценка: " + PlayerPrefs.GetString("lvl1Mark");
     }
 
-    public void Lvl1Shooter()
-    {
-        SceneManager.LoadScene("Lvl1Shooter");
-    }
-
     public void Lvl2()
     {
         Time.timeScale = 1;
@@ -108,6 +103,12 @@ public class buttons : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("Lvl1");
+    }
+
+    public void RestartLvl2()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Lvl2");
     }
 
     public void GameplayPC()

@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     private bool IsDead = false;
     private bool IsCourStart = false;
     private float currentSpeed;
+    private bool stop = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (IsShootable)
         {
-            if (IsDead && IsCourStart)
+            if ((IsDead && IsCourStart) || stop)
             {
                 currentSpeed = Mathf.Lerp(currentSpeed, 0f, Time.deltaTime * 0.5f);
                 rb.velocity = Vector3.forward * currentSpeed;
@@ -51,18 +52,31 @@ public class EnemyMovement : MonoBehaviour
         {
             rb.velocity = Vector3.forward * speed * 1.4f;
         }
+
+        if (!IsShootable && stop)
+        {
+            IsShootable = true;
+        }
+
+        if (transform.position.z >= 5641.2f)
+        {
+            stop = true;
+        }
     }
 
     public void Atacked()
     {
-        currentHealth -= 10;
-        healthBar.fillAmount = currentHealth / maxHealth;
-        if (currentHealth == 0)
+        if (!IsDead)
         {
-            IsDead = true;
-            system = GameObject.Find("EnemySystem").transform.GetComponent<EnemySystem>();
-            system.DelEnemy((int)transform.position.x == -84 ? 2 : (int)transform.position.x == -75 ? 1 : 0);
-            StartCoroutine(Death());
+            currentHealth -= 8;
+            healthBar.fillAmount = currentHealth / maxHealth;
+            if (currentHealth <= 0)
+            {
+                IsDead = true;
+                system = GameObject.Find("EnemySystem").transform.GetComponent<EnemySystem>();
+                system.DelEnemy((int)transform.position.x == -84 ? 2 : (int)transform.position.x == -75 ? 1 : 0);
+                StartCoroutine(Death());
+            }
         }
     }
 
