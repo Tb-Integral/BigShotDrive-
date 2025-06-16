@@ -12,6 +12,7 @@ public class CoinManager : MonoBehaviour
     [SerializeField] private GameObject CloseCarScoreWindow;
     [SerializeField] private Transform LinesFolder;
     [SerializeField] private Movement bike;
+    [SerializeField] private AudioManager audio;
     public int coins = 0;
     public float coolScore = 0;
     public float nitroScore = 0;
@@ -29,6 +30,7 @@ public class CoinManager : MonoBehaviour
 
     public void RefreshCoinText()
     {
+        audio.PlayCoin();
         coinText.text = "$" + coins;
     }
     public void RefreshScoreText()

@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float nitroDrainRate = 1f; // Скорость расхода
     [SerializeField] private InputActionReference nitroButton;
     [SerializeField] private RectTransform nitroEffects;
+    [SerializeField] private AudioManager audio;
     [HideInInspector] public Vector3 velocity;
     public TrailRenderer skidMarks1;
     public TrailRenderer skidMarks2;
@@ -34,6 +35,10 @@ public class Movement : MonoBehaviour
     private float nitroCharge = 1f; // от 0 до 1
     private float originalMaxSpeed;
     private bool nitroReleased = true;
+    private bool CanRidingAudio = false;
+    private bool IsAudioPlaying = false;
+    private bool IsAudioDrift = false;
+    private bool IsDrift = false;
 
     bool nitroKeyPressed = false;
     float rayLength;
@@ -79,6 +84,11 @@ public class Movement : MonoBehaviour
         skidMarks1.emitting = false;
         skidMarks2.startWidth = skidWildth;
         skidMarks2.emitting = false;
+
+        if (audio == null)
+        {
+            audio = GameObject.Find("audio").transform.GetComponent<AudioManager>();
+        }
     }
 
     void Update()
@@ -120,6 +130,23 @@ public class Movement : MonoBehaviour
 
         velocity = BikeRb.transform.InverseTransformDirection(BikeRb.velocity);
         currentVelocityOffset = velocity.z / maxSpeed;
+
+        if (velocity.magnitude > 4f)
+        {
+            CanRidingAudio = true;
+        }
+        else
+        {
+            CanRidingAudio = false;
+            IsAudioPlaying = false;
+            audio.StopRiding();
+        }
+
+        if (CanRidingAudio && !IsAudioPlaying)
+        {
+            IsAudioPlaying = true;
+            audio.PlayRiding();
+        }
     }
 
     private void FixedUpdate()
@@ -166,6 +193,8 @@ public class Movement : MonoBehaviour
                 maxSpeed = NirtoSpeed;
             }
 
+            audio.transform.root.GetComponent<AudioSource>().pitch = 1.5f;
+
             nitroCharge -= nitroDrainRate * Time.deltaTime;
             nitroCharge = Mathf.Clamp01(nitroCharge);
         }
@@ -178,6 +207,8 @@ public class Movement : MonoBehaviour
                     IsNitroActive = false;
                     maxSpeed = originalMaxSpeed;
                 }
+
+                audio.transform.root.GetComponent<AudioSource>().pitch = 1f;
 
                 nitroCharge += nitroRechargeRate * Time.deltaTime;
                 nitroCharge = Mathf.Clamp01(nitroCharge);
@@ -254,11 +285,27 @@ public class Movement : MonoBehaviour
         {
             CircleRb.velocity *= brakingFactor / 10;
             CircleRb.drag = driftDrag;
+            IsDrift = true;
         }
         else
         {
             CircleRb.drag = norDrag;
+            IsDrift = false;
         }
+        if (IsDrift)
+        {
+            if (!IsAudioDrift)
+            {
+                IsAudioDrift = true;
+                audio.PlayDrift();
+            }
+        }
+        else
+        {
+            IsAudioDrift = false;
+            audio.StopDrift();
+        }
+
     }
 
     bool Grounded()

@@ -3,40 +3,56 @@
   "WorkspaceRootPath": "E:\\Mareatan\\GitHub\\BigShotDrive!\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\shooterpart\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\contrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\contrmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\movebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\movebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|e:\\mareatan\\github\\bigshotdrive!\\assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endlvl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\coinselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\movebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\movebike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\idk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\idk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\shooterpart\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooterpart\\enemysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\simplecarmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,14 +79,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InvisibleWall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|E:\\Mareatan\\GitHub\\BigShotDrive!\\assets\\scripts\\coinselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7EB0294-A16A-57EC-217C-0976F0B624AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coinselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\simpleMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\simpleMove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,36 +94,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Shooting.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\Shooting.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\Shooting.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\Shooting.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\Shooting.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:37:22.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CameraMovement.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\CameraMovement.cs",
               "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\CameraMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\CameraMovement.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAAAH8AAAAdAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAuwJMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:33:48.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T14:33:48.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "MoveBike.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\MoveBike.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\MoveBike.cs",
@@ -127,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "EnemyMovement.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\EnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\EnemyMovement.cs",
@@ -139,19 +134,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EnemySystem.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAtwAsAAAAvAAAA",
+              "DocumentIndex": 0,
+              "Title": "ContrManager.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ContrManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ContrManager.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ContrManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ContrManager.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAowBgAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T13:29:54.193Z"
+              "WhenOpened": "2025-06-05T16:43:29.545Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
+              "Title": "CarAI.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CarAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CarAI.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CarAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CarAI.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAnwDoAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T13:51:54.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "buttons.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\buttons.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
+              "RelativeToolTip": "Assets\\Scripts\\buttons.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAowIYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T22:38:47.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAnwNIAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T00:14:39.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoinSelect.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinSelect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinSelect.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinSelect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinSelect.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:01:17.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinManager.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewCAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T17:37:39.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EndLvl.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\EndLvl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EndLvl.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\EndLvl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EndLvl.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAwwGoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:47:13.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AudioManager.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AudioManager.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAApwD0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T22:26:26.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Scrollbar.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Scrollbar.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Scrollbar.cs",
@@ -163,79 +244,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContrManager.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ContrManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ContrManager.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ContrManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ContrManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "DocumentIndex": 12,
+              "Title": "EnemySystem.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\EnemySystem.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAtwAsAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T16:43:29.545Z"
+              "WhenOpened": "2025-06-14T13:29:54.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EndLvl.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\EndLvl.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EndLvl.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\EndLvl.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EndLvl.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwEQAAAAJAAAA",
+              "DocumentIndex": 20,
+              "Title": "Shooting.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\Shooting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\Shooting.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\Shooting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\Shooting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:47:13.283Z"
+              "WhenOpened": "2025-06-14T15:37:22.804Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CarAI.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CarAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CarAI.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CarAI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CarAI.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAowBMAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "idk.cs",
+              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\idk.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShooterPart\\idk.cs",
+              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ShooterPart\\idk.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShooterPart\\idk.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T13:51:54.439Z"
+              "WhenOpened": "2025-06-15T20:39:00.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Movement.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
-              "ViewState": "AQIAAM8AAAAAAAAAAAAqwOAAAACKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T00:14:39.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CoinManager.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinManager.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CoinManager.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAYwEQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:37:39.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "buttons.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\buttons.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\buttons.cs",
-              "RelativeToolTip": "Assets\\Scripts\\buttons.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAiwDIAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T22:38:47.979Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ScoreBikeTrigger.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\ScoreBikeTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScoreBikeTrigger.cs",
@@ -247,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Path.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\Path.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Path.cs",
@@ -259,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SimpleCarMove.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\SimpleCarMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SimpleCarMove.cs",
@@ -271,19 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CoinSelect.cs",
-              "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinSelect.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CoinSelect.cs",
-              "ToolTip": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\CoinSelect.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CoinSelect.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T17:01:17.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "InvisibleWall.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\InvisibleWall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InvisibleWall.cs",
@@ -294,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Lit.shader",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -306,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "simpleMove.cs",
               "DocumentMoniker": "E:\\Mareatan\\GitHub\\BigShotDrive!\\Assets\\Scripts\\simpleMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\simpleMove.cs",

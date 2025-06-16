@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ContrManager : MonoBehaviour
 {
@@ -23,25 +24,25 @@ public class ContrManager : MonoBehaviour
         }
         instance = this;
 
-        if (GameObject.Find("ControllerManager") != null)
+        if (!PlayerPrefs.HasKey("balance"))
+        {
+            PlayerPrefs.SetInt("balance", 0);
+            PlayerPrefs.SetInt("lvl1Score", 0);
+            PlayerPrefs.SetString("lvl1Mark", "--");
+            PlayerPrefs.SetInt("lvl2Score", 0);
+            PlayerPrefs.SetString("lvl2Mark", "--");
+            PlayerPrefs.SetInt("lvl3Score", 0);
+            PlayerPrefs.SetString("lvl3Mark", "--");
 
-        if (!PlayerPrefs.HasKey("balance")) PlayerPrefs.SetInt("balance", 0);
+            PlayerPrefs.SetInt("redBikeSkin", 1);
+            PlayerPrefs.SetInt("greenBikeSkin", 0);
+            PlayerPrefs.SetInt("blueBikeSkin", 0);
+            PlayerPrefs.SetInt("pinkBikeSkin", 0);
+            PlayerPrefs.SetInt("goldBikeSkin", 0);
+            PlayerPrefs.SetInt("whiteBikeSkin", 0);
 
-        if (!PlayerPrefs.HasKey("lvl1Score")) PlayerPrefs.SetInt("lvl1Score", 0);
-        if (!PlayerPrefs.HasKey("lvl1Mark")) PlayerPrefs.SetString("lvl1Mark", "--");
-        if (!PlayerPrefs.HasKey("lvl2Score")) PlayerPrefs.SetInt("lvl2Score", 0);
-        if (!PlayerPrefs.HasKey("lvl2Mark")) PlayerPrefs.SetString("lvl2Mark", "--");
-        if (!PlayerPrefs.HasKey("lvl3Score")) PlayerPrefs.SetInt("lvl3Score", 0);
-        if (!PlayerPrefs.HasKey("lvl3Mark")) PlayerPrefs.SetString("lvl3Mark", "--");
-
-        if (!PlayerPrefs.HasKey("redBikeSkin")) PlayerPrefs.SetInt("redBikeSkin", 1);
-        if (!PlayerPrefs.HasKey("greenBikeSkin")) PlayerPrefs.SetInt("greenBikeSkin", 0);
-        if (!PlayerPrefs.HasKey("blueBikeSkin")) PlayerPrefs.SetInt("blueBikeSkin", 0);
-        if (!PlayerPrefs.HasKey("pinkBikeSkin")) PlayerPrefs.SetInt("pinkBikeSkin", 0);
-        if (!PlayerPrefs.HasKey("goldBikeSkin")) PlayerPrefs.SetInt("goldBikeSkin", 0);
-        if (!PlayerPrefs.HasKey("whiteBikeSkin")) PlayerPrefs.SetInt("whiteBikeSkin", 0);
-
-        if (!PlayerPrefs.HasKey("equipColor")) PlayerPrefs.SetString("equipColor", "red");
+            PlayerPrefs.SetString("equipColor", "red");
+        }
 
         GameObject bikeForColor = GameObject.Find("rootBike").transform.Find("Motorcycle (1)").Find("Bike").Find("Bike").gameObject;
         bikeColor1 = bikeForColor.GetComponent<Renderer>().materials[4];
@@ -54,11 +55,14 @@ public class ContrManager : MonoBehaviour
 
     private void OnLevelWasLoaded(int level)
     {
-        GameObject bikeForColor = GameObject.Find("rootBike").transform.Find("Motorcycle (1)").Find("Bike").Find("Bike").gameObject;
-        bikeColor1 = bikeForColor.GetComponent<Renderer>().materials[4];
-        bikeColor1.SetColor("_BaseColor", currentColor1);
-        bikeColor2 = bikeForColor.GetComponent<Renderer>().materials[3];
-        bikeColor2.SetColor("_BaseColor", currentColor2);
+        if (!(SceneManager.GetActiveScene().name == "Lvl3"))
+        {
+            GameObject bikeForColor = GameObject.Find("rootBike").transform.Find("Motorcycle (1)").Find("Bike").Find("Bike").gameObject;
+            bikeColor1 = bikeForColor.GetComponent<Renderer>().materials[4];
+            bikeColor1.SetColor("_BaseColor", currentColor1);
+            bikeColor2 = bikeForColor.GetComponent<Renderer>().materials[3];
+            bikeColor2.SetColor("_BaseColor", currentColor2);
+        }
     }
 
     public void ChangeColor(Color color)

@@ -62,3 +62,11 @@ The following packages were added:
   com.unity.2d.sprite@1.0.0
   com.unity.2d.spriteshape@9.0.2
   com.unity.test-framework@1.1.33
+
+=== Mon Jun 16 02:15:25 2025
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.toonshader@0.10.2-preview

@@ -88,7 +88,23 @@ public class EndLvl : MonoBehaviour
             PlayerPrefs.SetInt("lvl3Score", totalScorePoints);
             PlayerPrefs.SetString("lvl3Mark", totalMark);
         }
+    }
 
+    public void ToMainMenu()
+    {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void NextLvl2()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Lvl2");
+    }
+
+    public void NextLvl3()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Lvl3");
     }
 }
