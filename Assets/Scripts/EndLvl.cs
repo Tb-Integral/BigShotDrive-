@@ -47,7 +47,7 @@ public class EndLvl : MonoBehaviour
                 time = ((int)coinManager.TimeScoreEnd());
                 timeScorePoints = time < 31 ? 800 : time < 41 ? 600 : time > 120 ? -2000 : time > 90 ? -500 : time > 60 ? -200 : 0;
                 totalScorePoints = cool + nitro + timeScorePoints;
-                totalMark = totalScorePoints > 1800 ? "S" : totalScorePoints > 1700 ? "A" : totalScorePoints > 1600 ? "B" : totalScorePoints > 1400 ? "C" : totalScorePoints > 1200 ? "D" : "F";
+                totalMark = totalScorePoints > 1300 ? "S" : totalScorePoints > 1200 ? "A" : totalScorePoints > 1000 ? "B" : totalScorePoints > 900 ? "C" : totalScorePoints > 800 ? "D" : "F";
 
                 coins.text = "Заработано: $" + coinsPoints.ToString();
                 coolScore.text = "Крутой счет: " + cool.ToString();

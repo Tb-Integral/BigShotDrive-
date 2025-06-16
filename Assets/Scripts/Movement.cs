@@ -56,22 +56,22 @@ public class Movement : MonoBehaviour
         {
             contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
 
-            //if (!contrManager.gameplayPC && stopButton != null)
-            //{
-            //    // Добавляем триггеры для кнопки
-            //    var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
-            //                      stopButton.gameObject.AddComponent<EventTrigger>();
+            if (!contrManager.gameplayPC && stopButton != null)
+            {
+                // Добавляем триггеры для кнопки
+                var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
+                                  stopButton.gameObject.AddComponent<EventTrigger>();
 
-            //    // Нажатие
-            //    var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
-            //    pointerDown.callback.AddListener((data) => { stopRequested = true; });
-            //    eventTrigger.triggers.Add(pointerDown);
+                // Нажатие
+                var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
+                pointerDown.callback.AddListener((data) => { stopRequested = true; });
+                eventTrigger.triggers.Add(pointerDown);
 
-            //    // Отпускание
-            //    var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
-            //    pointerUp.callback.AddListener((data) => { stopRequested = false; });
-            //    eventTrigger.triggers.Add(pointerUp);
-            //}
+                // Отпускание
+                var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
+                pointerUp.callback.AddListener((data) => { stopRequested = false; });
+                eventTrigger.triggers.Add(pointerUp);
+            }
         }
 
         CircleRb.transform.parent = null;
@@ -100,29 +100,18 @@ public class Movement : MonoBehaviour
         if (!contrManager.gameplayPC)
         {
             Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
+            float deadZone = 0.1f;
 
-            rotateInput = joystickInput.x;
+            // Если вертикальное движение достаточно заметно - едем
+            moveInput = joystickInput.y > deadZone ? 1f : 0f; // чтобы всегда ехать на максимуме, если жмём вперёд
 
-            if (joystickInput.magnitude > 0.05f)
-            {
-                Vector2 normalizedInput = joystickInput.normalized;
+            // Поворот — напрямую по горизонтали джойстика, с учётом мёртвой зоны
+            rotateInput = Mathf.Abs(joystickInput.x) > deadZone ? joystickInput.x : 0f;
 
-                if (normalizedInput.y > 0.2f)
-                {
-                    moveInput = 1f;
-                }
-                else
-                {
-                    moveInput = joystickInput.y;
-                }
-            }
-            else
-            {
-                moveInput = 0f;
-            }
         }
         else if (contrManager.gameplayPC)
         {
+            nitroKeyPressed = nitroButton.action.ReadValue<float>() > 0.1f;
             moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
             rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
         }
