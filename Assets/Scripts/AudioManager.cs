@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource coin;
     [SerializeField] private AudioSource drift;
     [SerializeField] private AudioSource shot;
+    public bool IsRidingPlaying() => riding != null && riding.isPlaying;
+    public void SetPitch(float pitch) => riding.pitch = pitch;
+
 
     public void PlayClick()
     {

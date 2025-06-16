@@ -39,6 +39,7 @@ public class Movement : MonoBehaviour
     private bool IsAudioPlaying = false;
     private bool IsAudioDrift = false;
     private bool IsDrift = false;
+    private bool brakePress = false;
 
     bool nitroKeyPressed = false;
     float rayLength;
@@ -55,22 +56,22 @@ public class Movement : MonoBehaviour
         {
             contrManager = GameObject.Find("ControllerManager").GetComponent<ContrManager>();
 
-            if (!contrManager.gameplayPC && stopButton != null)
-            {
-                // Добавляем триггеры для кнопки
-                var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
-                                  stopButton.gameObject.AddComponent<EventTrigger>();
+            //if (!contrManager.gameplayPC && stopButton != null)
+            //{
+            //    // Добавляем триггеры для кнопки
+            //    var eventTrigger = stopButton.gameObject.GetComponent<EventTrigger>() ??
+            //                      stopButton.gameObject.AddComponent<EventTrigger>();
 
-                // Нажатие
-                var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
-                pointerDown.callback.AddListener((data) => { stopRequested = true; });
-                eventTrigger.triggers.Add(pointerDown);
+            //    // Нажатие
+            //    var pointerDown = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
+            //    pointerDown.callback.AddListener((data) => { stopRequested = true; });
+            //    eventTrigger.triggers.Add(pointerDown);
 
-                // Отпускание
-                var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
-                pointerUp.callback.AddListener((data) => { stopRequested = false; });
-                eventTrigger.triggers.Add(pointerUp);
-            }
+            //    // Отпускание
+            //    var pointerUp = new EventTrigger.Entry { eventID = EventTriggerType.PointerUp };
+            //    pointerUp.callback.AddListener((data) => { stopRequested = false; });
+            //    eventTrigger.triggers.Add(pointerUp);
+            //}
         }
 
         CircleRb.transform.parent = null;
@@ -98,7 +99,6 @@ public class Movement : MonoBehaviour
         
         if (!contrManager.gameplayPC)
         {
-            nitroKeyPressed = nitroButton.action.IsPressed();
             Vector2 joystickInput = Joystick.action.ReadValue<Vector2>();
 
             rotateInput = joystickInput.x;
@@ -123,7 +123,6 @@ public class Movement : MonoBehaviour
         }
         else if (contrManager.gameplayPC)
         {
-            nitroKeyPressed = Input.GetKey(KeyCode.LeftShift);
             moveInput = Input.GetAxis("Vertical");    // Вперёд / назад
             rotateInput = Input.GetAxis("Horizontal");  // Влево / вправо
         }
@@ -225,6 +224,16 @@ public class Movement : MonoBehaviour
         }
     }
 
+    public void NitroPress()
+    {
+        nitroKeyPressed = true;
+    }
+
+    public void NitroUnpress()
+    {
+        nitroKeyPressed = false;
+    }
+
     void Rotation()
     {
         bool isBraking = (Input.GetKey(KeyCode.Space) || stopRequested);
@@ -281,7 +290,7 @@ public class Movement : MonoBehaviour
 
     void Brake()
     {
-        if (Input.GetKey(KeyCode.Space) || stopRequested)
+        if (Input.GetKey(KeyCode.Space) || stopRequested || brakePress)
         {
             CircleRb.velocity *= brakingFactor / 10;
             CircleRb.drag = driftDrag;
@@ -306,6 +315,16 @@ public class Movement : MonoBehaviour
             audio.StopDrift();
         }
 
+    }
+
+    public void BrakePress()
+    {
+        brakePress = true;
+    }
+
+    public void BrakeUnPress()
+    {
+        brakePress = false;
     }
 
     bool Grounded()
