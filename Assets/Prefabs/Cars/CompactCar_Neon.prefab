@@ -289,8 +289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  maxAngle: 25
-  maxMotorTorque: 66
+  maxAngle: 30
+  maxMotorTorque: 4000
   currentSpeed: 0
   maxSpeed: 70
   NextCarStop: 15

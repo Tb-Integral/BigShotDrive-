@@ -35,6 +35,7 @@ public class EndLvl : MonoBehaviour
     {
         if (other.transform.tag.Equals("Player"))
         {
+            GameObject.Find("audio").transform.GetComponent<AudioSource>().priority = 1;
             Time.timeScale = 0;
             finish.SetActive(true);
 
@@ -67,6 +68,7 @@ public class EndLvl : MonoBehaviour
                 totalMark = deathsScore >= 1000 ? "S" : deathsScore >= 900 ? "A" : deathsScore >= 700 ? "B" : deathsScore >= 500 ? "C" : deathsScore >= 400 ? "D" : "F";
                 mark.text = "ќценка: " + totalMark;
             }
+
         }
     }
 
